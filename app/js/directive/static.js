@@ -5,9 +5,7 @@ module.exports = function(template) {
             replace: true,
             template: template,
             scope: {content: "="},
-            link: function($scope, element, attr) {
-                console.log($scope.content);
-            }
+            link: function($scope, element, attr) {}
         }
     }
 };

@@ -1,5 +1,5 @@
-<ul class="row">
-    <li ng-repeat="item in content.items" class="text-center col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{content.size}}">
+<ul class="clearfix">
+    <li ng-repeat="item in content.items" class="text-center col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{section.list.size}}">
         <p ng-bind="item.icon"></p>
 
         <h4 class="text-uppercase" ng-bind="item.title"></h4>

@@ -1,4 +1,3 @@
-<div class="bg-grey module-sm">
-    <h4 class="text-center text-uppercase" ng-bind="content.header"></h4>
-    <h4 class="text-center text-uppercase"><small ng-bind="content.subtitle"></small></h4>
+<div class="info row bg-grey module-sm">
+    <div custom-list content="content.list"></div>
 </div>

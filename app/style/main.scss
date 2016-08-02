@@ -92,7 +92,7 @@ main {
   }
 
   #content {
-    padding: 20px;
+    padding: 20px 0;
 
     .module-lg {
       padding: 140px 0;
@@ -148,6 +148,11 @@ main {
 
       * {
         color: #FFF;
+      }
+    }
+    .info {
+      li {
+        margin: 0;
       }
     }
   }
