@@ -1,0 +1,29 @@
+{
+  "name": "task-tracker",
+  "homepage": "https://github.com/DmitryShamak/task-tracker",
+  "authors": [
+    "DmitryShamak <hellkitedmitry@mail.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.9",
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.0",
+    "font-awesome": "~4.6.3",
+    "animate.css": "~3.5.2",
+    "lodash": "~4.13.1",
+    "moment": "~2.14.1"
+  }
+}

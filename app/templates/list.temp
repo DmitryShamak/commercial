@@ -1,0 +1,8 @@
+<ul class="row">
+    <li ng-repeat="item in content.items" class="text-center col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{content.size}}">
+        <p ng-bind="item.icon"></p>
+
+        <h4 class="text-uppercase" ng-bind="item.title"></h4>
+        <p ng-bind="item.content"></p>
+    </li>
+</ul>

@@ -1,0 +1,1 @@
+<h2 class="text-center"><small ng-bind="content.value"></small></h2>

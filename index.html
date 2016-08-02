@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
+    <title ng-bind="pageTitle"></title>
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700italic,700' rel='stylesheet' type='text/css'>
+
+    <link type="text/css" rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+
+    <link type="text/css" rel="stylesheet" href="/build/main.css" />
+    <link type="text/css" rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+</head>
+<body>
+    <aside id="sidebar" navigation class="clearfix"></aside>
+    <main class="clearfix">
+        <div ui-view id="content"></div>
+        <footer class="clearfix"></footer>
+    </main>
+</body>
+<script src="/build/build.js"></script>
+</html>
