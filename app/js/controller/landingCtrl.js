@@ -1,3 +1,3 @@
-module.exports = function ($scope, $state, user) {
+module.exports = function ($scope, $state) {
 
 };

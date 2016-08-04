@@ -1,0 +1,16 @@
+<section>
+    <h2 class="logo text-uppercase text-bold">
+        <a ui-sref="landing">Shamak A.S.</a>
+    </h2>
+    <nav ng-repeat="link in links">
+        <a class="text-uppercase" ui-sref="{{link.state}}" ng-bind="link.label"></a>
+
+        <div ng-if="link.sublinks" class="sub-links">
+            <div class="caret-icon text-big"><i class="fa fa-angle-right"></i></div>
+
+            <div class="links">
+                <a ng-repeat="sublink in link.sublinks" class="text-uppercase sub-link" ui-sref="{{sublink.state}}" ng-bind="sublink.label"></a>
+            </div>
+        </div>
+    </nav>
+</section>

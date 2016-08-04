@@ -1,1 +1,1 @@
-<h2 class="text-center"><small ng-bind="content.value"></small></h2>
+<h3 class="text-center module-subtitle"><small ng-bind="content.value"></small></h3>

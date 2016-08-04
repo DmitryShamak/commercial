@@ -1,7 +1,8 @@
 var styles = require("./style/main.scss");
 
 var templates = {
-    navigation: require("./templates/navigation.temp"),
+    navigation: require("./html/navigation.html"),
+
     pending: require("./templates/pending.temp"),
 
     header: require("./templates/header.temp"),
@@ -33,12 +34,7 @@ var templates = {
             return {
                 restrict: 'A',
                 template: templates.navigation,
-                controller: function($scope, $state) {
-                    $scope.signOut = function() {
-                        $scope.user.signOut();
-                        $state.go("landing");
-                    }
-                }
+                controller: require("./js/controller/navigationCtrl.js")
             }
         })
 
