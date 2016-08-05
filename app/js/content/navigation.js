@@ -2,22 +2,19 @@ module.exports = [{
     state: "landing",
     label: "Home"
 }, {
-    state: "about",
-    label: "About"
-}, {
-    state: "service",
-    label: "Service",
+    state: "landing",
+    label: "Services",
     sublinks: [{
-        state: "sublink",
+        state: "landing",
         label: "Service 1"
     }, {
-        state: "sublink",
+        state: "landing",
         label: "Service  2"
     }, {
-        state: "sublink",
+        state: "landing",
         label: "Service 3"
     }, {
-        state: "sublink",
+        state: "landing",
         label: "Service 4"
     }]
 }, {
