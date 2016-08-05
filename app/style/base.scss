@@ -1,0 +1,107 @@
+[class*="text-"] {
+  &[class*="-bold"] {
+    font-weight: 600;
+  }
+  &[class*="-meduim"] {
+    font-weight: 400;
+  }
+  &[class*="-light"] {
+    font-weight: 100;
+  }
+
+  &[class*="-uppercase"] {
+    text-transform: uppercase;
+  }
+  &[class*="-capitalize"] {
+    text-transform: capitalize;
+  }
+
+  &[class*="-small"] {
+    font-size: 0.8em;
+  }
+  &[class*="-meduim"] {
+    font-size: 1.1em;
+  }
+  &[class*="-big"] {
+    font-size: 1.4em;
+  }
+  &[class*="-huge"] {
+    font-size: 2em;
+  }
+  &[class*="-giant"] {
+    font-size: 3em;
+  }
+}
+
+[class*="margin-"] {
+  &[class*="-top"] {
+    &[class*="-sm"] {
+      margin-top: 40px;
+    }
+    &[class*="-md"] {
+      margin-top: 80px;
+    }
+  }
+  &[class*="-bottom"] {
+    &[class*="-xs"] {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.module-lg {
+  padding: 140px 0;
+}
+.module-md {
+  padding: 100px 0;
+}
+.module-sm {
+  padding: 70px 0;
+}
+.module-xs {
+  padding: 20px 0;
+}
+
+textarea {
+  resize: none;
+  max-width: 100%;
+}
+
+.form-control {
+  background: rgba(0, 0, 0, 0.05);
+
+  border: 0;
+  border-radius: 0;
+
+  outline: 0;
+}
+
+.fixed-by-width {
+  max-width: $mdWidth;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 0;
+
+  &, &:hover,
+  &:active,
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  &.btn-primary {
+    background: $bgAlternativeColor;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $bgAlternativeColor;
+    }
+  }
+}

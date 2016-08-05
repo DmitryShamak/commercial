@@ -16,61 +16,8 @@ body {
   font-size: 12px;
 
   line-height: 1.8;
-}
 
-[class*="text-"] {
-  &[class*="-bold"] {
-    font-weight: 600;
-  }
-  &[class*="-meduim"] {
-    font-weight: 400;
-  }
-  &[class*="-light"] {
-    font-weight: 100;
-  }
-
-  &[class*="-uppercase"] {
-    text-transform: uppercase;
-  }
-  &[class*="-capitalize"] {
-    text-transform: capitalize;
-  }
-
-  &[class*="-small"] {
-    font-size: 0.8em;
-  }
-  &[class*="-meduim"] {
-    font-size: 1.1em;
-  }
-  &[class*="-big"] {
-    font-size: 1.4em;
-  }
-  &[class*="-huge"] {
-    font-size: 2em;
-  }
-  &[class*="-giant"] {
-    font-size: 3em;
-  }
-}
-
-[class*="margin-"] {
-  &[class*="-top"] {
-    &[class*="-sm"] {
-      margin-top: 40px;
-    }
-    &[class*="-md"] {
-      margin-top: 80px;
-    }
-  }
-  &[class*="-bottom"] {
-    &[class*="-xs"] {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-.pointer {
-  cursor: pointer;
+  @import "base.scss";
 }
 
 #sidebar {
@@ -83,7 +30,7 @@ body {
   padding: 60px 0 0 20px;
   z-index: 999;
 
-  background: $bgNavColor;
+  background: $bgAlternativeColor;
 
   color: $textSidebarColor;
 
@@ -149,7 +96,7 @@ main {
   margin-left: $navigationWidth;
   min-height: 100%;
 
-  background: $bgMainColor;
+  background: $bgPrimaryColor;
 
   color: $textPrimaryColor;
 
@@ -167,26 +114,12 @@ main {
   #content {
     padding: 20px 0;
 
-    .module-lg {
-      padding: 140px 0;
-    }
-    .module-md {
-      padding: 100px 0;
-    }
-    .module-sm {
-      padding: 70px 0;
-    }
-    .module-xs {
-      padding: 20px 0;
-    }
-
     .module-subtitle {
-      max-width: 800px;
       margin: 50px auto 0;
     }
 
     .bg-grey {
-      background-color: $bgSecondColor;
+      background-color: $bgSecondaryColor;
     }
     .bg-image {
       background-repeat: no-repeat;

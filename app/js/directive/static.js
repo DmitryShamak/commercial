@@ -5,7 +5,12 @@ module.exports = function(template) {
             replace: true,
             template: template,
             scope: {content: "="},
-            link: function($scope, element, attr) {}
+            link: function($scope, element, attr) {
+                $scope.onsubmit = function(data) {
+                    //todo: validate (required*)
+                    console.log(data);
+                }
+            }
         }
     }
 };

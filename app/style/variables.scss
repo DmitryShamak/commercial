@@ -1,15 +1,16 @@
 //NAVIGATION START
 $navigationWidth: 250px;
 $navigationMobileMinHeight: 50px;
+$mdWidth: 800px;
 //NAVIGATION END
 
 $screen-desktop: 1200px;
 $screen-tablet: 768px;
 
 //THEME START
-$bgMainColor: #FFF;
-$bgNavColor: #111;
-$bgSecondColor: #f5f5f5;
+$bgPrimaryColor: #FFF;
+$bgAlternativeColor: #111;
+$bgSecondaryColor: #f5f5f5;
 
 $textPrimaryColor: #787878;
 $textSecondaryColor: #FFF;

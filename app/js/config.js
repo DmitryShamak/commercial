@@ -7,7 +7,10 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
     };
 
     var contents = {
-        home: require("./content/home.js")
+        home: require("./content/home.js"),
+
+        about: require("./content/about.js"),
+        contact: require("./content/contact.js")
     };
 
     $stateProvider
@@ -21,15 +24,16 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             controller: "PageCtrl"
         })
         .state('contact', {
-            url: "/",
+            url: "/contact",
             template: templates.page,
             data: {
-                pageTitle: 'Contact'
+                pageTitle: 'Contact',
+                content: contents.contact
             },
             controller: "PageCtrl"
         })
-        .state('job', {
-            url: "/",
+        .state('services', {
+            url: "/services",
             template: templates.page,
             data: {
                 pageTitle: 'Job'
@@ -37,10 +41,11 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             controller: "PageCtrl"
         })
         .state('about', {
-            url: "/",
+            url: "/about",
             template: templates.page,
             data: {
-                pageTitle: 'About'
+                pageTitle: 'About',
+                content: contents.about
             },
             controller: "PageCtrl"
         });

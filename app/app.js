@@ -9,7 +9,12 @@ var templates = {
     subtitle: require("./templates/subtitle.temp"),
     list: require("./templates/list.temp"),
     info: require("./templates/info.temp"),
-    stats: require("./templates/stats.temp")
+    stats: require("./templates/stats.temp"),
+    form: require("./templates/form.temp"),
+    input: require("./templates/input.temp"),
+    textarea: require("./templates/textarea.temp"),
+    submit: require("./templates/submit.temp"),
+    map: require("./templates/map.temp")
 };
 
 (function() {
@@ -46,6 +51,11 @@ var templates = {
         .directive('customList', require("./js/directive/static.js")(templates.list))
         .directive('customInfo', require("./js/directive/static.js")(templates.info))
         .directive('customStats', require("./js/directive/static.js")(templates.stats))
+        .directive('customForm', require("./js/directive/static.js")(templates.form))
+        .directive('customInput', require("./js/directive/static.js")(templates.input))
+        .directive('customTextarea', require("./js/directive/static.js")(templates.textarea))
+        .directive('customSubmit', require("./js/directive/static.js")(templates.submit))
+        .directive('customMap', require("./js/directive/static.js")(templates.map))
 
         .factory('api', function() {
             return require("./js/helpers/api.js");
