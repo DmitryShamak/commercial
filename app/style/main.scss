@@ -69,6 +69,10 @@ body {
   }
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 #sidebar {
   position: fixed;
   top: 0; bottom: 0;
@@ -119,16 +123,12 @@ body {
       cursor: pointer;
 
       &:hover {
-        .links {
-          display: block;
-        }
         .caret-icon {
           color: $textSidebarHoverColor;
         }
       }
 
       .links {
-        display: none;
         min-width: 200px;
         padding: 10px 25px;
 
@@ -243,6 +243,85 @@ main {
   }
 }
 
+@media screen and (min-width: $screen-tablet) {
+  #sidebar {
+    nav {
+      .sub-links {
+        .links {
+          display: none;
+        }
+
+        &:hover {
+          .links {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   border-top: $borderMainSize solid $borderMainColor;
+}
+
+@media screen and (max-width: $screen-tablet) {
+  #sidebar {
+    bottom: initial; right: 0;
+
+    min-height: $navigationMobileMinHeight;
+    width: auto;
+
+    padding: 20px 10px 10px;
+
+    opacity: 0.9;
+
+    .links-wrapper {
+      margin-top: 10px;
+
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .logo {
+      margin: 0;
+    }
+
+    nav {
+      .collapse-wrapper {
+        .hide-subs-btn {
+          display: none;
+        }
+
+        &.active {
+          .hide-subs-btn {
+            display: block;
+          }
+          .show-subs-btn {
+            display: none;
+          }
+        }
+      }
+
+      .sub-links {
+        position: relative;
+        left: 0; top: 0;
+
+        .caret-icon {
+          right: 0; left: initial; top: -35px;
+
+          padding-right: 10px;
+          height: 40px;
+          width: 100px;
+
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: $navigationMobileMinHeight;
+  }
 }
