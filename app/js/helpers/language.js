@@ -1,6 +1,6 @@
 function Language(lang) {
     var self = this;
-    var defaultLanguage = "en";
+    var defaultLanguage = navigator.language || navigator.userLanguage || "en";
     var language = lang;
 
     self.default = defaultLanguage;

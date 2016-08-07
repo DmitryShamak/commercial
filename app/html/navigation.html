@@ -1,7 +1,7 @@
 <section class="navigation no-selection collapse-wrapper">
     <h2 class="logo text-uppercase text-bold clearfix">
         <a class="pull-left" ui-sref="landing">Shamak</a>
-        <div class="pointer pull-right hidden-sm hidden-md hidden-lg" ng-click="toggleCollapse($event)">
+        <div class="pointer navigation-toggle-btn pull-right hidden-sm hidden-md hidden-lg" ng-click="toggleCollapse($event)">
             <i class="fa fa-bars"></i>
         </div>
     </h2>
@@ -26,7 +26,7 @@
         </nav>
     </div>
 
-    <div class="hidden-xs bottom-info">
+    <div class="bottom-info">
         <div class="language-wrapper text-center">
             <span ng-repeat="lang in languages" language="lang"></span>
         </div>

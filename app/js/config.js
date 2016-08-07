@@ -13,6 +13,11 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
         contact: require("./content/contact.js")
     };
 
+    var language = new (require("./helpers/language.js"))();
+
+
+    $urlRouterProvider.otherwise('/' + language.default + '/');
+
     $stateProvider
         .state('landing', {
             url: "/:language/",

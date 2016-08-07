@@ -1,4 +1,7 @@
 module.exports = {
+    "about": "about",
+    "contact": "contact",
+    "experience": "experience",
     "blah_blah_blah": "blah blah blah",
     "why_choose_us": "WHY CHOOSE US",
     "legal_and_advisory_services": "Legal and advisory (consulting) services, legal support of business",

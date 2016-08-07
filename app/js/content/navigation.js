@@ -24,9 +24,11 @@ module.exports = [{
         label: "Service 4"
     }]
 }, {
+    state: "landing",
     id: "about",
     label: "About"
 }, {
-    state: "contact",
+    state: "landing",
+    id: "contact",
     label: "Contact"
 }];

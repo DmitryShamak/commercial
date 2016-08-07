@@ -38,10 +38,10 @@ var templates = {
             $rootScope.translate = function(string) {
                 var key = string && string.toLowerCase().trim().replace(/\./g, "").replace(/\s/g, "_");
                 if(key && localizations && localizations[$rootScope.language.active]) {
-                    return localizations[$rootScope.language.active][key] || string;
+                    return localizations[$rootScope.language.active][key] || string + " (no translation)";
                 }
 
-                return string;
+                return string + "[NO SUCH TRANSLATION]";
             };
 
             $rootScope.$on('$stateChangeStart', function(event, toState) {

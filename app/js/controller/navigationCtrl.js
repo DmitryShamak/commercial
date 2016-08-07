@@ -43,15 +43,18 @@ module.exports = function ($scope, $state) {
         if(id) {
             promise ? promise.then($scope.goToId.bind(this, id)) : $scope.goToId(id);
         }
+
+        $scope.toggleCollapse(null);
     };
 
     $scope.toggleCollapse = function(ev) {
-        var container = $(ev.target).closest(".collapse-wrapper");
-        var target = $(container).children(".collapse-content");
+        var target = ev ? ev.target : $("#sidebar .navigation-toggle-btn");
+        var container = $(target).closest(".collapse-wrapper");
+        var element = $(container).children(".collapse-content");
 
-        if(target && target.length) {
+        if(element && element.length) {
             container.toggleClass("active");
-            target.toggleClass("hidden-xs");
+            element.toggleClass("hidden-xs");
         }
     }
 };

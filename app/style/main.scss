@@ -128,8 +128,6 @@ main {
   }
 
   #content {
-    padding: 20px 0;
-
     .module-subtitle {
       margin: 50px auto 0;
     }
@@ -201,6 +199,12 @@ main {
       }
     }
   }
+
+  main {
+    #content {
+      padding: 0 0 20px;
+    }
+  }
 }
 
 footer {
@@ -260,10 +264,26 @@ footer {
         }
       }
     }
+
+    .navigation-toggle-btn {
+      position: relative;
+
+      z-index: 10;
+    }
+
+    .bottom-info {
+      right: 50px;
+      left: initial;
+      bottom: initial;
+      top: 5px;
+    }
   }
 
   main {
     margin-left: 0;
-    margin-top: $navigationMobileMinHeight;
+
+    #content {
+      padding-top: $navigationMobileMinHeight;
+    }
   }
 }
