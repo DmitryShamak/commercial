@@ -1,4 +1,4 @@
-<section class="navigation collapse-wrapper">
+<section class="navigation no-selection collapse-wrapper">
     <h2 class="logo text-uppercase text-bold clearfix">
         <a class="pull-left" ui-sref="landing">Shamak</a>
         <div class="pointer pull-right hidden-sm hidden-md hidden-lg" ng-click="toggleCollapse($event)">
@@ -8,7 +8,7 @@
 
     <div class="links-wrapper collapse-content hidden-xs">
         <nav ng-repeat="link in links">
-            <a class="text-uppercase" ui-sref="{{link.state}}" ng-bind="link.label"></a>
+            <a class="text-uppercase" ng-click="goTo(link.state, link.id)" ng-bind="link.label"></a>
 
             <div ng-if="link.sublinks" class="sub-links collapse-wrapper">
                 <div class="caret-icon text-big" ng-click="toggleCollapse($event)">
@@ -18,9 +18,17 @@
                 </div>
 
                 <div class="links hidden-xs collapse-content">
-                    <a ng-repeat="sublink in link.sublinks" class="text-uppercase sub-link" ui-sref="{{sublink.state}}" ng-bind="sublink.label"></a>
+                    <div ng-repeat="sublink in link.sublinks">
+                        <a class="text-uppercase sub-link" ng-click="goTo(sublink.state, sublink.id)" ng-bind="sublink.label"></a>
+                    </div>
                 </div>
             </div>
         </nav>
+    </div>
+
+    <div class="hidden-xs bottom-info">
+        <div class="language-wrapper text-center">
+            <span ng-repeat="lang in languages" language="lang"></span>
+        </div>
     </div>
 </section>

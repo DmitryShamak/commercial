@@ -90,6 +90,22 @@ body {
       }
     }
   }
+
+  .bottom-info {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+
+    padding: 10px;
+
+    .language {
+      margin: 0 5px;
+
+      &.active,
+      &:hover {
+        color: $textSecondaryColor;
+      }
+    }
+  }
 }
 
 main {
@@ -147,10 +163,6 @@ main {
       margin: 0;
 
       list-style: none;
-
-      li {
-        margin: 40px 0;
-      }
     }
 
     .stats {
@@ -163,9 +175,6 @@ main {
       }
     }
     .info {
-      li {
-        margin: 0;
-      }
 
       i {
         &:hover {

@@ -6,6 +6,20 @@ module.exports = function(template) {
             template: template,
             scope: {content: "="},
             link: function($scope, element, attr) {
+                if($scope.content.value) {
+                    $scope.content.text = $scope.$root.translate($scope.content.value);
+                }
+                if($scope.content.items) {
+                    $scope.content.items.forEach(function(item) {
+                        if(item.titleValue) {
+                            item.title = $scope.$root.translate(item.titleValue);
+                        }
+                        if(item.value) {
+                            item.text = $scope.$root.translate(item.value);
+                        }
+                    })
+                }
+
                 $scope.onsubmit = function(data) {
                     //todo: validate (required*)
                     console.log(data);

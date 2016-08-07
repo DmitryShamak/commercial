@@ -1,0 +1,3 @@
+<span class="language pointer text-bold text-uppercase"
+      ng-class="{'disabled': lang.disabled, 'active text-huge': lang.active}"
+      ng-click="set(lang.id)" ng-bind="lang.label"></span>

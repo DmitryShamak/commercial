@@ -1,4 +1,4 @@
-<section class="container-fluid clearfix" ng-repeat="section in content">
+<section class="container-fluid clearfix" ng-repeat="section in content" id="{{section.id || 'section' + $index}}">
     <div ng-repeat="item in section.items" ng-class="item.class || ''">
         <div attr-name="{{item.type}}" content="item.content"></div>
     </div>

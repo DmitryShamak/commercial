@@ -1,45 +1,23 @@
 module.exports = [{
+  id: "home",
   title: "Home",
   subtitle: "sweet home",
 
   items: [{
     type: "header",
-    class: "margin-top-md",
+    class: "margin-top-md fixed-by-width",
     content: {
-      value: "Lorem Ipsum"
+      value: "legal and advisory services"
     }
   }, {
     type: "subtitle",
     content: {
-      value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-    }
-  }, {
-    type: "list",
-    class: "margin-top-sm",
-    content: {
-      size: 3,
-      iconClass: "text-giant margin-bottom-xs",
-      items: [{
-        icon: "icon-documents",
-        title: "Fusce sit amet",
-        text: "Praesent tempor tellus quis pulvinar tincidunt"
-      }, {
-        icon: "icon-printer",
-        title: "Nunc ac dui orci",
-        text: "Donec bibendum, elit ac molestie pellentesque, orci purus vulputate magna, non auctor velit elit nec mauris"
-      }, {
-        icon: "icon-trophy",
-        title: "Mauris turpis nunc",
-        text: "Aenean porta condimentum lacus, sed tempor purus euismod ut"
-      }, {
-        icon: "icon-map",
-        title: "Integer pulvinar",
-        text: "Praesent tempor tellus quis pulvinar tincidunt"
-      }]
+      value: "Our company specializes in legal consulting business"
     }
   }, {
     type: "stats",
     content: {
+      class: "margin-top-md",
       image: "https://wallpaperscraft.com/image/city_street_house_sidewalk_58870_1600x1200.jpg",
       //image: "http://templates.mycookroom.ru/Stone-v1.0.1/Site/assets/images/module-5.jpg",
       list: {
@@ -48,29 +26,24 @@ module.exports = [{
         size: 4,
         items: [{
           icon: "icon-trophy",
-          title: "Fusce sit amet",
-          text: "Phasellus convallis pulvinar orci"
+          titleValue: "Experience",
+          value: "The accumulated experience allows us.."
         }, {
-          icon: "icon-tools",
-          title: "Nunc ac dui orci",
-          text: "porttitor et convallis in"
+          icon: "icon-briefcase",
+          titleValue: "our customers",
+          value: "80 percent of our customers are companies from the IT sphere"
         }, {
-          icon: "icon-mobile",
-          title: "Mauris turpis nunc",
-          text: "porttitor ut diam"
+          icon: "icon-documents",
+          titleValue: "blah blah blah",
+          value: "Aenean porta condimentum lacus, sed tempor purus euismod ut"
         }]
       }
     }
   }, {
     type: "header",
-    class: "margin-top-md",
     content: {
-      value: "Nam dictum a lacus id tincidunt"
-    }
-  }, {
-    type: "header",
-    content: {
-      value: "Aenean porta condimentum lacus"
+      class: "margin-top-md",
+      value: "blah blah blah"
     }
   }, {
     type: "subtitle",
@@ -79,21 +52,92 @@ module.exports = [{
     }
   }, {
     type: "info",
-    class: "margin-top-sm",
+    class: "margin-top-md margin-bottom-sm",
     content: {
+      header: {
+        class: "margin-bottom-sm",
+        value: "why_choose_us"
+      },
       list: {
-        iconClass: "text-giant",
-        size: 3,
+        size: 12,
+        itemClass: "",
         items: [{
-          icon: "fa fa-digg fa-2x"
+          titleValue: "Confidentiality"
         }, {
-          icon: "fa fa-drupal fa-2x"
+          titleValue: "Work experience in the field of law for over 10 years"
         }, {
-          icon: "fa fa-ge fa-2x"
+          titleValue: "Certified lawyer licensed"
         }, {
-          icon: "fa fa-modx fa-2x"
+          titleValue: "Experience in state control and supervisory bodies"
+        }, {
+          titleValue: "Conducting cases in court"
+        }, {
+          titleValue: "Working with bailiffs experience"
         }]
       }
+    }
+  }]
+}, {
+  id: "about",
+  title: "About",
+
+  items: [{
+    type: "header",
+    class: "margin-top-md",
+    content: {
+      value: "About"
+    }
+  }, {
+    type: "subtitle",
+    content: {
+      value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    }
+  }]
+}, {
+  id: "contact",
+  title: "Contact",
+
+  items: [{
+    type: "header",
+    class: "margin-top-md",
+    content: {
+      value: "Contact"
+    }
+  }, {
+    type: "subtitle",
+    content: {
+      value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    }
+  }, {
+    type: "form",
+    class: "margin-top-md",
+    content: {
+      title: "LET’S TALK",
+      subtitle: "eque porro quisquam est qui dolorem ipsum quia dolor sit amet",
+
+      submitUrl: "",
+      items: [{
+        type: "input",
+        content: {
+          label: "Name"
+        }
+      }, {
+        type: "input",
+        content: {
+          label: "Email"
+        }
+      }, {
+        type: "textarea",
+        content: {
+          label: "Message",
+          rows: 5
+        }
+      }, {
+        type: "submit",
+        content: {
+          label: "Submit"
+        }
+      }]
     }
   }]
 }];

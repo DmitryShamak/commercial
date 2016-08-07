@@ -15,7 +15,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
 
     $stateProvider
         .state('landing', {
-            url: "/",
+            url: "/:language/",
             template: templates.page,
             data: {
                 pageTitle: 'Home',
@@ -24,7 +24,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             controller: "PageCtrl"
         })
         .state('contact', {
-            url: "/contact",
+            url: "/:language/contact",
             template: templates.page,
             data: {
                 pageTitle: 'Contact',
@@ -33,7 +33,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             controller: "PageCtrl"
         })
         .state('services', {
-            url: "/services",
+            url: "/:lang/services",
             template: templates.page,
             data: {
                 pageTitle: 'Job'
@@ -41,7 +41,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             controller: "PageCtrl"
         })
         .state('about', {
-            url: "/about",
+            url: "/:language/about",
             template: templates.page,
             data: {
                 pageTitle: 'About',

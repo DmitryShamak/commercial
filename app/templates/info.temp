@@ -1,3 +1,4 @@
 <div class="info row bg-grey module-sm">
-    <div custom-list content="content.list"></div>
+    <div ng-if="content.header" custom-header content="content.header"></div>
+    <div ng-if="content.list" custom-list content="content.list"></div>
 </div>

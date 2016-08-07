@@ -35,18 +35,36 @@
 
 [class*="margin-"] {
   &[class*="-top"] {
-    &[class*="-sm"] {
+    &[class*="top-sm"] {
       margin-top: 40px;
     }
-    &[class*="-md"] {
+    &[class*="top-md"] {
       margin-top: 80px;
     }
   }
   &[class*="-bottom"] {
-    &[class*="-xs"] {
+    &[class*="bottom-sm"] {
+      margin-bottom: 40px;
+    }
+    &[class*="bottom-xs"] {
       margin-bottom: 20px;
     }
   }
+}
+
+.no-selection {
+  &, * {
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .pointer {

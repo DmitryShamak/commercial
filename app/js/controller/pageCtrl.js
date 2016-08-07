@@ -1,3 +1,3 @@
-module.exports = function ($scope, $state, $timeout) {
+module.exports = function ($scope, $state) {
     $scope.content = $state.$current.data.content || [];
 };
