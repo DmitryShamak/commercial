@@ -1,0 +1,6 @@
+<section class="content clearfix" ng-class="footer.class || ''">
+    <div class="text-center text-big text-dark">
+        <span class="footer-item" ng-repeat="item in footer.items" ng-class="item.class || ''" ng-bind="item.value"></span>
+    </div>
+    <div class="text-center text-uppercase margin-top-sm" ng-bind="footer.copyright"></div>
+</section>

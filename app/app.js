@@ -2,6 +2,7 @@ var styles = require("./style/main.scss");
 
 var templates = {
     navigation: require("./html/navigation.html"),
+    footer: require("./html/footer.html"),
 
     pending: require("./templates/pending.temp"),
     language: require("./templates/language.temp"),
@@ -67,6 +68,16 @@ var templates = {
                 restrict: 'A',
                 template: templates.navigation,
                 controller: require("./js/controller/navigationCtrl.js")
+            }
+        })
+
+        .directive('footer', function() {
+            return {
+                restrict: 'EA',
+                template: templates.footer,
+                link: function(scope, element, attributes) {
+                    scope.footer =  require("./js/content/footer.js");
+                }
             }
         })
 

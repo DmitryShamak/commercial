@@ -183,6 +183,16 @@ main {
   }
 }
 
+footer {
+  .content {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    .footer-item {
+      margin: 0 10px;
+    }
+  }
+}
+
 @media screen and (min-width: $screen-tablet) {
   #sidebar {
     nav {
@@ -205,10 +215,6 @@ main {
       padding: 0 0 20px;
     }
   }
-}
-
-footer {
-  border-top: $borderMainSize solid $borderMainColor;
 }
 
 @media screen and (max-width: $screen-tablet) {

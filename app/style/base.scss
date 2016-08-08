@@ -52,6 +52,13 @@
   }
 }
 
+.text-primary {
+  color: $textPrimaryColor;
+}
+.text-dark {
+  color: $textDarkColor;
+}
+
 [class*="bg-dark-"] {
   position: relative;
 
