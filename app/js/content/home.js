@@ -15,14 +15,15 @@ module.exports = [{
       value: "Our company specializes in legal consulting business"
     }
   }, {
-    type: "stats",
+    type: "background",
     content: {
-      class: "margin-top-md",
+      class: "margin-top-md bg-dark-60",
       image: "https://wallpaperscraft.com/image/city_street_house_sidewalk_58870_1600x1200.jpg",
       //image: "http://templates.mycookroom.ru/Stone-v1.0.1/Site/assets/images/module-5.jpg",
-      list: {
+      statistic: {
         iconClass: "text-giant margin-bottom-xs",
         titleClass: "text-huge text-bold",
+        textClass: "text-big",
         size: 4,
         items: [{
           icon: "icon-trophy",
@@ -60,19 +61,20 @@ module.exports = [{
       },
       list: {
         size: 12,
-        itemClass: "",
+        class: "fixed-by-width text-capitalize",
+        itemClass: "text-big",
         items: [{
-          titleValue: "Confidentiality"
+          value: "Confidentiality"
         }, {
-          titleValue: "Work experience in the field of law for over 10 years"
+          value: "Work experience in the field of law for over 10 years"
         }, {
-          titleValue: "Certified lawyer licensed"
+          value: "Certified lawyer licensed"
         }, {
-          titleValue: "Experience in state control and supervisory bodies"
+          value: "Experience in state control and supervisory bodies"
         }, {
-          titleValue: "Conducting cases in court"
+          value: "Conducting cases in court"
         }, {
-          titleValue: "Working with bailiffs experience"
+          value: "Working with bailiffs experience"
         }]
       }
     }

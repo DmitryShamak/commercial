@@ -3,7 +3,7 @@ function Language(lang) {
     var defaultLanguage = navigator.language || navigator.userLanguage || "en";
     var language = lang;
 
-    self.default = defaultLanguage;
+    self.default = defaultLanguage.substring(0, 2);
     self.active = language;
 }
 

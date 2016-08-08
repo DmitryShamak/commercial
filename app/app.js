@@ -9,8 +9,9 @@ var templates = {
     header: require("./templates/header.temp"),
     subtitle: require("./templates/subtitle.temp"),
     list: require("./templates/list.temp"),
+    statistic: require("./templates/statistic.temp"),
     info: require("./templates/info.temp"),
-    stats: require("./templates/stats.temp"),
+    background: require("./templates/background.temp"),
     form: require("./templates/form.temp"),
     input: require("./templates/input.temp"),
     textarea: require("./templates/textarea.temp"),
@@ -77,7 +78,8 @@ var templates = {
         .directive('customSubtitle', require("./js/directive/static.js")(templates.subtitle))
         .directive('customList', require("./js/directive/static.js")(templates.list))
         .directive('customInfo', require("./js/directive/static.js")(templates.info))
-        .directive('customStats', require("./js/directive/static.js")(templates.stats))
+        .directive('customStatistic', require("./js/directive/static.js")(templates.statistic))
+        .directive('customBackground', require("./js/directive/static.js")(templates.background))
         .directive('customForm', require("./js/directive/static.js")(templates.form))
         .directive('customInput', require("./js/directive/static.js")(templates.input))
         .directive('customTextarea', require("./js/directive/static.js")(templates.textarea))

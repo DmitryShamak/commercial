@@ -1,0 +1,10 @@
+<ul class="clearfix statistic">
+    <li ng-repeat="item in content.items" ng-class="content.itemClass || ''" class="text-center col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{section.list.size}}">
+        <div ng-if="item.icon" class="list-icon" ng-class="content.iconClass || ''">
+            <i ng-class="item.icon"></i>
+        </div>
+
+        <h4 ng-if="item.title" class="text-uppercase" ng-class="content.titleClass || ''" ng-bind="item.title"></h4>
+        <p ng-if="item.text" ng-class="content.textClass || ''" ng-bind="item.text"></p>
+    </li>
+</ul>
