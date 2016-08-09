@@ -76,7 +76,7 @@ body {
       }
 
       .links {
-        min-width: 200px;
+        min-width: $navigationSubLinksMinWidth;
         padding: 10px 25px;
 
         a {

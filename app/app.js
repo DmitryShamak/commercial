@@ -52,7 +52,8 @@ var templates = {
 
             $rootScope.$on('$stateChangeSuccess', function (evt, toState, toParams, fromState, fromParams) {
                 if(!$rootScope.language.active) {
-                    $rootScope.language.active = toParams.language || $rootScope.language.default;
+                    var stateLanguage = localizations.hasOwnProperty(toParams.language) && toParams.language;
+                    $rootScope.language.active = stateLanguage || $rootScope.language.default;
                     $state.go(toState.name, {
                         language: $rootScope.language.active
                     })

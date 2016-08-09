@@ -6,8 +6,15 @@ module.exports = function(template) {
             template: template,
             scope: {content: "="},
             link: function($scope, element, attr) {
+                if($scope.content.id) {
+                    element.attr("id", $scope.content.id);
+                }
+
                 if($scope.content.value) {
                     $scope.content.text = $scope.$root.translate($scope.content.value);
+                }
+                if($scope.content.titleValue) {
+                    $scope.content.title = $scope.$root.translate($scope.content.titleValue);
                 }
                 if($scope.content.items) {
                     $scope.content.items.forEach(function(item) {

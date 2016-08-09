@@ -6,11 +6,11 @@ module.exports = {
         class: "text-right"
     }, {
         label: "Telephone",
-        value: "+222 (33) 345-76-90",
+        value: "+375 (29) 171 16 54",
         class: "text-center"
     }, {
         label: "Address",
-        value: "City, State, Address apt. 1050",
+        value: "220002 Minsk, ul. Kiseleva, 55, office 22",
         class: "text-left"
     }],
     copyright: "© 2016 Aenean porta condimentum, ALL RIGHTS RESERVED."

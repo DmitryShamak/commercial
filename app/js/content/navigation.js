@@ -4,24 +4,28 @@ module.exports = [{
     label: "Home"
 }, {
     state: "landing",
-    id: "home",
+    id: "services",
     label: "Services",
     sublinks: [{
         state: "landing",
-        id: "home",
-        label: "Service 1"
+        id: "registration-and-reorganization",
+        label: "Registration and reorganization of legal entities"
     }, {
         state: "landing",
-        id: "home",
-        label: "Service  2"
+        id: "support-economic-activity",
+        label: "Support economic activity"
     }, {
         state: "landing",
-        id: "home",
-        label: "Service 3"
+        id: "with-claims-related-work",
+        label: "With claims related work"
     }, {
         state: "landing",
-        id: "home",
-        label: "Service 4"
+        id: "administrative-law",
+        label: "Administrative law"
+    }, {
+        state: "landing",
+        id: "counseling",
+        label: "Counseling"
     }]
 }, {
     state: "landing",

@@ -57,7 +57,7 @@ module.exports = [{
     content: {
       header: {
         class: "margin-bottom-sm",
-        value: "why_choose_us"
+        value: "Why choose us"
       },
       list: {
         size: 12,
@@ -93,6 +93,106 @@ module.exports = [{
     type: "subtitle",
     content: {
       value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+    }
+  }]
+}, {
+  id: "services",
+  title: "Services",
+
+  items: [{
+    type: "header",
+    class: "margin-top-md",
+    content: {
+      value: "Services provided include"
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      id: "registration-and-reorganization",
+      titleValue: "Registration and reorganization of legal entities",
+      itemClass: "text-big",
+      items: [{
+        value: "Detailed study of constituent documents"
+      }, {
+        value: "Bringing the constituent documents in compliance with the law"
+      }, {
+        value: "Registration and reorganization of legal entities branches and representative offices"
+      }, {
+        value: "Registration of branches and representative offices"
+      }, {
+        value: "Amendments and preparation of the new edition of the Charter"
+      }, {
+        value: "Support for the purchase and sale transactions of shares in the authorized capital"
+      }, {
+        value: "Change of name of a legal entity"
+      }, {
+        value: "Document preparation, support of registration as an individual entrepreneur"
+      }]
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      id: "support-economic-activity",
+      titleValue: "Support economic activity",
+      itemClass: "text-big",
+      items: [{
+        value: "Work with personnel"
+      }, {
+        value: "Advice on legal aspects of doing business"
+      }, {
+        value: "Drafting and legal examination of economic contracts"
+      }, {
+        value: "Obtaining a special permit for labor activity in the Republic of Belarus for foreign citizens"
+      }, {
+        value: "Obtaining licenses and special permits"
+      }, {
+        value: "Obtaining patents"
+      }, {
+        value: "Copyright protection"
+      }]
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      id: "with-claims-related-work",
+      titleValue: "With claims related work",
+      itemClass: "text-big",
+      items: [{
+        value: "Negotiation and settlement of disputes out of court"
+      }, {
+        value: "Preparation of claim letters"
+      }, {
+        value: "Preparation of applications to commit the executive inscriptions"
+      }, {
+        value: "Support of debt collection"
+      }]
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      id: "administrative-law",
+      titleValue: "Work in the field of administrative law",
+      itemClass: "text-big",
+      items: [{
+        value: "Support and legal protection in cases of administrative offenses"
+      }]
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      id: "counseling",
+      titleValue: "Counseling",
+      itemClass: "text-big",
+      items: [{
+        value: "Consultancy in the field of law"
+      }, {
+        value: "Preparation of official requests"
+      }]
     }
   }]
 }, {

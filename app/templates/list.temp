@@ -1,4 +1,5 @@
 <ul class="clearfix" ng-class="content.class || ''">
+    <h3 ng-if="content.titleValue" ng-bind="content.title"></h3>
     <li ng-repeat="item in content.items" ng-class="content.itemClass || ''" class="col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{section.list.size}}">
         <span ng-bind="item.text"></span>
     </li>

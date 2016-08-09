@@ -7,6 +7,7 @@ module.exports = function($compile) {
                     var attrName = "custom-" + attributes.attrName;
                     if(!element.attr(attrName)) {
                         element.attr(attrName, attrName);
+
                         $compile(element)(scope);
                     }
                 }
