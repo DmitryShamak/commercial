@@ -4,6 +4,10 @@ module.exports = [{
     label: "Home"
 }, {
     state: "landing",
+    id: "about",
+    label: "About"
+}, {
+    state: "landing",
     id: "services",
     label: "Services",
     sublinks: [{
@@ -27,10 +31,6 @@ module.exports = [{
         id: "counseling",
         label: "Counseling"
     }]
-}, {
-    state: "landing",
-    id: "about",
-    label: "About"
 }, {
     state: "landing",
     id: "contact",

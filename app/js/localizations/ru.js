@@ -26,7 +26,7 @@ module.exports = {
     "communication_with_contractors_and_correspondence_in_english": "Общение с контрагентами, ведение переписки на английском языке",
     "confidentiality": "Соблюдение конфиденциальности",
 
-    "services_provided_include": "Предоставляемые услуги включают",
+    "services_provided_include": "Предоставляемые услуги",
     "registration_and_reorganization_of_legal_entities": "Регистрация и реорганизация юридических лиц",
     "detailed_study_of_constituent_documents": "Детальная проработка учредительных документов",
     "bringing_the_constituent_documents_in_compliance_with_the_law": "Приведение учредительных документов с соответствие с законодательством",

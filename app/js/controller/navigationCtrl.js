@@ -1,5 +1,9 @@
-module.exports = function ($scope, $state) {
+module.exports = function ($scope, $state, $compile) {
     var scrollTarget = $("body");
+
+    $scope.$on('$stateChangeSuccess', function (evt, toState, toParams) {
+        $compile($("#sidebar"))($scope);
+    });
 
     $scope.links = require("../content/navigation.js");
 
