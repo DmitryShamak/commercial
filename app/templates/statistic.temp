@@ -4,7 +4,7 @@
             <i ng-class="item.icon"></i>
         </div>
 
-        <h4 ng-if="item.title" class="text-uppercase" ng-class="content.titleClass || ''" ng-bind="item.title"></h4>
-        <p ng-if="item.text" ng-class="content.textClass || ''" ng-bind="item.text"></p>
+        <h4 ng-if="item.title" class="text-uppercase" ng-class="content.titleClass || ''" translate="{{item.title}}"></h4>
+        <p ng-if="item.text" ng-class="content.textClass || ''" translate="{{item.text}}"></p>
     </li>
 </ul>

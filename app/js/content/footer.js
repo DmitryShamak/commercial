@@ -13,5 +13,5 @@ module.exports = {
         value: "220002 Minsk, ul. Kiseleva, 55, office 22",
         class: "text-left"
     }],
-    copyright: "© 2016 Aenean porta condimentum, ALL RIGHTS RESERVED."
+    copyright: "Сopyright"
 };

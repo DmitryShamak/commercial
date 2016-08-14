@@ -1,1 +1,1 @@
-<h2 class="text-center text-uppercase" ng-class="content.class || ''" ng-bind="content.text"></h2>
+<h2 class="text-center text-uppercase" ng-class="content.class || ''" translate="{{content.text}}"></h2>

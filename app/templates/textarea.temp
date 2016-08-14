@@ -1,1 +1,1 @@
-<textarea rows="{{content.rows || 3}}" class="form-control" ng-model="content.value" placeholder="{{content.text}}"></textarea>
+<textarea rows="{{content.rows || 3}}" class="form-control" ng-model="content.value" translate="{{content.label}}" translate-attr="placeholder"></textarea>

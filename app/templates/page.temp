@@ -3,4 +3,3 @@
         <div attr-name="{{item.type}}" content="item.content"></div>
     </div>
 </section>
-<footer></footer>

@@ -8,7 +8,7 @@
 
     <div class="links-wrapper collapse-content hidden-xs">
         <nav ng-repeat="link in links">
-            <a class="text-uppercase" ng-click="goTo(link.state, link.id)" ng-bind="link.label"></a>
+            <a class="text-uppercase" ng-click="goTo(link.state, link.id)" translate="{{link.label}}"></a>
 
             <div ng-if="link.sublinks" class="sub-links collapse-wrapper">
                 <div class="caret-icon text-big" ng-click="toggleCollapse($event)">
@@ -19,7 +19,7 @@
 
                 <div class="links hidden-xs collapse-content">
                     <div ng-repeat="sublink in link.sublinks">
-                        <a class="text-uppercase sub-link" ng-click="goTo(sublink.state, sublink.id)" ng-bind="sublink.label"></a>
+                        <a class="text-uppercase sub-link" ng-click="goTo(sublink.state, sublink.id)" translate="{{sublink.label}}"></a>
                     </div>
                 </div>
             </div>

@@ -1,1 +1,1 @@
-<input class="form-control" type="text" ng-model="content.value" placeholder="{{content.label}}" />
+<input class="form-control" type="text" ng-model="content.value" translate="{{content.label}}" translate-attr="placeholder" />

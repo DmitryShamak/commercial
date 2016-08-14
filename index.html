@@ -22,8 +22,8 @@
     <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
 </head>
 <body>
-    <aside id="sidebar" navigation class="clearfix"></aside>
-    <main class="clearfix">
+    <aside ng-if="appReady" id="sidebar" navigation class="clearfix"></aside>
+    <main ng-if="appReady" class="clearfix">
         <div ui-view id="content"></div>
     </main>
 </body>

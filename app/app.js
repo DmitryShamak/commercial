@@ -2,7 +2,7 @@ var styles = require("./style/main.scss");
 
 var templates = {
     navigation: require("./html/navigation.html"),
-    footer: require("./html/footer.html"),
+    footer: require("./templates/footer.temp"),
 
     pending: require("./templates/pending.temp"),
     language: require("./templates/language.temp"),
@@ -24,9 +24,10 @@ var templates = {
     angular.module('app', ['ui.router', 'ngResource'])
         .config(require("./js/config.js"))
         .run(function($rootScope, $state, $stateParams, $injector, $location) {
-            var localizations = require("./js/content/localizations.js");
             var Language = require("./js/helpers/language.js");
             var currentLanguage = $stateParams.language;
+
+            $rootScope.appReady = false;
 
             $rootScope.safeApply = function(scope) {
                 if (scope.$root.$$phase != '$apply' && scope.$root.$$phase != '$digest') {
@@ -37,27 +38,21 @@ var templates = {
             $rootScope.languages = require("./js/content/languages.js");
             $rootScope.language = new Language(currentLanguage);
 
-            $rootScope.translate = function(string) {
-                var key = string && string.toLowerCase().trim().replace(/\./g, "").replace(/\s/g, "_");
-                if(key && localizations && localizations[$rootScope.language.active]) {
-                    return localizations[$rootScope.language.active][key] || string + " (no translation)";
-                }
-
-                return string + "[NO SUCH TRANSLATION]";
-            };
-
-            $rootScope.$on('$stateChangeStart', function(event, toState) {
+            $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
                 $rootScope.pageTitle = toState.data.pageTitle || "Shamak";
+
+                $rootScope.language.active = toParams.language || $rootScope.language.default;
             });
 
             $rootScope.$on('$stateChangeSuccess', function (evt, toState, toParams, fromState, fromParams) {
                 if(!$rootScope.language.active) {
-                    var stateLanguage = localizations.hasOwnProperty(toParams.language) && toParams.language;
-                    $rootScope.language.active = stateLanguage || $rootScope.language.default;
+                    $rootScope.language.active = toParams.language || $rootScope.language.default;
                     $state.go(toState.name, {
                         language: $rootScope.language.active
                     })
                 }
+
+                $rootScope.appReady = true;
             });
         })
 
@@ -72,19 +67,10 @@ var templates = {
             }
         })
 
-        .directive('footer', function() {
-            return {
-                restrict: 'EA',
-                template: templates.footer,
-                link: function(scope, element, attributes) {
-                    scope.footer =  require("./js/content/footer.js");
-                }
-            }
-        })
-
         .directive('attrName', require("./js/directive/attr_name.js"))
         .directive('pending', require("./js/directive/pending.js")(templates.pending))
         .directive('language', require("./js/directive/language.js")(templates.language))
+        .directive('translate', require("./js/directive/translate.js"))
 
         .directive('customHeader', require("./js/directive/static.js")(templates.header))
         .directive('customSubtitle', require("./js/directive/static.js")(templates.subtitle))
@@ -97,6 +83,7 @@ var templates = {
         .directive('customTextarea', require("./js/directive/static.js")(templates.textarea))
         .directive('customSubmit', require("./js/directive/static.js")(templates.submit))
         .directive('customMap', require("./js/directive/static.js")(templates.map))
+        .directive('customFooter', require("./js/directive/static.js")(templates.footer))
 
         .factory('api', function() {
             return require("./js/helpers/api.js");

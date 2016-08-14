@@ -1,5 +1,6 @@
 module.exports = function ($scope, $state) {
     var scrollTarget = $("body");
+
     $scope.links = require("../content/navigation.js");
 
     $scope.goToState = function(state) {

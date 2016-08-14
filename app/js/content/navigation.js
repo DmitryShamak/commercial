@@ -21,7 +21,7 @@ module.exports = [{
     }, {
         state: "landing",
         id: "administrative-law",
-        label: "Administrative law"
+        label: "Work in the field of administrative law"
     }, {
         state: "landing",
         id: "counseling",

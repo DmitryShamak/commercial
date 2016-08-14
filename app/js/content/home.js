@@ -7,12 +7,12 @@ module.exports = [{
     type: "header",
     class: "margin-top-md fixed-by-width",
     content: {
-      value: "legal and advisory services"
+      text: "legal and advisory services"
     }
   }, {
     type: "subtitle",
     content: {
-      value: "Our company specializes in legal consulting business"
+      text: "Our company specializes in legal consulting business"
     }
   }, {
     type: "background",
@@ -27,16 +27,16 @@ module.exports = [{
         size: 4,
         items: [{
           icon: "icon-trophy",
-          titleValue: "Experience",
-          value: "The accumulated experience allows us.."
+          title: "Experience",
+          text: "The accumulated experience allows us.."
         }, {
           icon: "icon-briefcase",
-          titleValue: "our customers",
-          value: "80 percent of our customers are companies from the IT sphere"
+          title: "our customers",
+          text: "80 percent of our customers are companies from the IT sphere"
         }, {
           icon: "icon-documents",
-          titleValue: "blah blah blah",
-          value: "Aenean porta condimentum lacus, sed tempor purus euismod ut"
+          title: "blah blah blah",
+          text: "Aenean porta condimentum lacus, sed tempor purus euismod ut"
         }]
       }
     }
@@ -44,12 +44,12 @@ module.exports = [{
     type: "header",
     content: {
       class: "margin-top-md",
-      value: "blah blah blah"
+      text: "blah blah blah"
     }
   }, {
     type: "subtitle",
     content: {
-      value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at efficitur tellus. Mauris mi orci, pulvinar ac ipsum in, ornare vestibulum tellus. Cras erat orci, rutrum vitae nibh in, posuere eleifend ipsum. Aenean consequat justo congue nulla porta, nec sagittis bibendum."
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at efficitur tellus. Mauris mi orci, pulvinar ac ipsum in, ornare vestibulum tellus. Cras erat orci, rutrum vitae nibh in, posuere eleifend ipsum. Aenean consequat justo congue nulla porta, nec sagittis bibendum."
     }
   }, {
     type: "info",
@@ -57,24 +57,24 @@ module.exports = [{
     content: {
       header: {
         class: "margin-bottom-sm",
-        value: "Why choose us"
+        text: "Why choose us"
       },
       list: {
         size: 12,
         class: "fixed-by-width text-capitalize",
         itemClass: "text-big",
         items: [{
-          value: "Confidentiality"
+          text: "Confidentiality"
         }, {
-          value: "Work experience in the field of law for over 10 years"
+          text: "Work experience in the field of law for over 10 years"
         }, {
-          value: "Certified lawyer licensed"
+          text: "Certified lawyer licensed"
         }, {
-          value: "Experience in state control and supervisory bodies"
+          text: "Experience in state control and supervisory bodies"
         }, {
-          value: "Conducting cases in court"
+          text: "Conducting cases in court"
         }, {
-          value: "Working with bailiffs experience"
+          text: "Working with bailiffs experience"
         }]
       }
     }
@@ -87,12 +87,12 @@ module.exports = [{
     type: "header",
     class: "margin-top-md",
     content: {
-      value: "About"
+      text: "About"
     }
   }, {
     type: "subtitle",
     content: {
-      value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
     }
   }]
 }, {
@@ -103,31 +103,31 @@ module.exports = [{
     type: "header",
     class: "margin-top-md",
     content: {
-      value: "Services provided include"
+      text: "Services provided include"
     }
   }, {
     type: "list",
     class: "margin-top-sm fixed-by-width",
     content: {
       id: "registration-and-reorganization",
-      titleValue: "Registration and reorganization of legal entities",
+      title: "Registration and reorganization of legal entities",
       itemClass: "text-big",
       items: [{
-        value: "Detailed study of constituent documents"
+        text: "Detailed study of constituent documents"
       }, {
-        value: "Bringing the constituent documents in compliance with the law"
+        text: "Bringing the constituent documents in compliance with the law"
       }, {
-        value: "Registration and reorganization of legal entities branches and representative offices"
+        text: "Registration and reorganization of legal entities branches and representative offices"
       }, {
-        value: "Registration of branches and representative offices"
+        text: "Registration of branches and representative offices"
       }, {
-        value: "Amendments and preparation of the new edition of the Charter"
+        text: "Amendments and preparation of the new edition of the Charter"
       }, {
-        value: "Support for the purchase and sale transactions of shares in the authorized capital"
+        text: "Support for the purchase and sale transactions of shares in the authorized capital"
       }, {
-        value: "Change of name of a legal entity"
+        text: "Change of name of a legal entity"
       }, {
-        value: "Document preparation, support of registration as an individual entrepreneur"
+        text: "Document preparation"
       }]
     }
   }, {
@@ -135,22 +135,22 @@ module.exports = [{
     class: "margin-top-sm fixed-by-width",
     content: {
       id: "support-economic-activity",
-      titleValue: "Support economic activity",
+      title: "Support economic activity",
       itemClass: "text-big",
       items: [{
-        value: "Work with personnel"
+        text: "Work with personnel"
       }, {
-        value: "Advice on legal aspects of doing business"
+        text: "Advice on legal aspects of doing business"
       }, {
-        value: "Drafting and legal examination of economic contracts"
+        text: "Drafting and legal examination of economic contracts"
       }, {
-        value: "Obtaining a special permit for labor activity in the Republic of Belarus for foreign citizens"
+        text: "Obtaining a special permit for labor activity in the Republic of Belarus for foreign citizens"
       }, {
-        value: "Obtaining licenses and special permits"
+        text: "Obtaining licenses and special permits"
       }, {
-        value: "Obtaining patents"
+        text: "Obtaining patents"
       }, {
-        value: "Copyright protection"
+        text: "Copyright protection"
       }]
     }
   }, {
@@ -158,16 +158,16 @@ module.exports = [{
     class: "margin-top-sm fixed-by-width",
     content: {
       id: "with-claims-related-work",
-      titleValue: "With claims related work",
+      title: "With claims related work",
       itemClass: "text-big",
       items: [{
-        value: "Negotiation and settlement of disputes out of court"
+        text: "Negotiation and settlement of disputes out of court"
       }, {
-        value: "Preparation of claim letters"
+        text: "Preparation of claim letters"
       }, {
-        value: "Preparation of applications to commit the executive inscriptions"
+        text: "Preparation of applications to commit the executive inscriptions"
       }, {
-        value: "Support of debt collection"
+        text: "Support of debt collection"
       }]
     }
   }, {
@@ -175,10 +175,10 @@ module.exports = [{
     class: "margin-top-sm fixed-by-width",
     content: {
       id: "administrative-law",
-      titleValue: "Work in the field of administrative law",
+      title: "Work in the field of administrative law",
       itemClass: "text-big",
       items: [{
-        value: "Support and legal protection in cases of administrative offenses"
+        text: "Support and legal protection in cases of administrative offenses"
       }]
     }
   }, {
@@ -186,12 +186,12 @@ module.exports = [{
     class: "margin-top-sm fixed-by-width",
     content: {
       id: "counseling",
-      titleValue: "Counseling",
+      title: "Counseling",
       itemClass: "text-big",
       items: [{
-        value: "Consultancy in the field of law"
+        text: "Consultancy in the field of law"
       }, {
-        value: "Preparation of official requests"
+        text: "Preparation of official requests"
       }]
     }
   }]
@@ -203,12 +203,12 @@ module.exports = [{
     type: "header",
     class: "margin-top-md",
     content: {
-      value: "Contact"
+      text: "Contact"
     }
   }, {
     type: "subtitle",
     content: {
-      value: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+      text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
     }
   }, {
     type: "form",
@@ -240,6 +240,30 @@ module.exports = [{
           label: "Submit"
         }
       }]
+    }
+  }]
+}, {
+  id: "footer",
+  items: [{
+    type: "footer",
+    content: {
+      class: "margin-top-md module-lg",
+      items: [{
+        label: "Email",
+        value: "name@email.dom",
+        doNotTranslate: true,
+        class: "text-right"
+      }, {
+        label: "Telephone",
+        value: "+375 (29) 171 16 54",
+        doNotTranslate: true,
+        class: "text-center"
+      }, {
+        label: "Address",
+        value: "Address Text",
+        class: "text-left"
+      }],
+      copyright: "Copyright"
     }
   }]
 }];
