@@ -1,7 +1,9 @@
 <footer>
     <section class="content clearfix" ng-class="content.class || ''">
-        <div class="text-center text-big text-dark">
-            <span class="footer-item" ng-repeat="item in content.items" ng-class="item.class || ''" translate="{{item.value}}" do-not-translate="{{item.doNotTranslate || ''}}"></span>
+        <div class="clearfix text-center text-big text-dark">
+            <div class="footer-item col-md-4 text-center-xs text-center-sm" ng-repeat="item in content.items" ng-class="item.class || ''">
+                <p ng-repeat="value in item.values" translate="{{value}}" do-not-translate="{{item.doNotTranslate || ''}}"></p>
+            </div>
         </div>
         <div class="text-center text-uppercase margin-top-sm" translate="{{content.copyright}}"></div>
     </section>

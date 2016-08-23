@@ -82,7 +82,7 @@ var templates = {
         .directive('customInput', require("./js/directive/static.js")(templates.input))
         .directive('customTextarea', require("./js/directive/static.js")(templates.textarea))
         .directive('customSubmit', require("./js/directive/static.js")(templates.submit))
-        .directive('customMap', require("./js/directive/static.js")(templates.map))
+        .directive('customMap', require("./js/directive/map.js")(templates.map))
         .directive('customFooter', require("./js/directive/static.js")(templates.footer))
 
         .factory('api', function() {

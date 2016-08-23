@@ -3,11 +3,11 @@ module.exports = {
     "contact": "Contact",
     "home": "Home",
     "services": "Services",
-    "address_text": "220002 Minsk, ul. Kiseleva, 55, office 22",
+    "address_text": "Rakovskaya Street 19A, Minsk",
     "email": "Email",
     "name": "Name",
     "submit": "Submit",
-    "copyright": "© 2016 Aenean porta condimentum, ALL RIGHTS RESERVED.",
+    "copyright": "© 2016, ALL RIGHTS RESERVED.",
     "message": "Message",
 
     "experience": "experience",

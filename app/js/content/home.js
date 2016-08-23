@@ -241,26 +241,30 @@ module.exports = [{
         }
       }]
     }
+  }, {
+    type: "map",
+    class: "margin-top-md",
+    content: {}
   }]
 }, {
   id: "footer",
   items: [{
     type: "footer",
     content: {
-      class: "margin-top-md module-lg",
+      class: "row module-lg",
       items: [{
         label: "Email",
-        value: "name@email.dom",
+        values: ["name@email.dom"],
         doNotTranslate: true,
         class: "text-right"
       }, {
         label: "Telephone",
-        value: "+375 (29) 171 16 54",
+        values: ["+375 (29) 171 16 54", "+375 (33) 671 16 54"],
         doNotTranslate: true,
         class: "text-center"
       }, {
         label: "Address",
-        value: "Address Text",
+        values: ["Address Text"],
         class: "text-left"
       }],
       copyright: "Copyright"
