@@ -1,4 +1,5 @@
 <div class="info row bg-grey module-sm">
     <div ng-if="content.header" custom-header content="content.header"></div>
+    <div ng-if="content.subtitle" custom-subtitle content="content.subtitle"></div>
     <div ng-if="content.list" custom-list content="content.list"></div>
 </div>

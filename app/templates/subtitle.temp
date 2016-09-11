@@ -1,1 +1,1 @@
-<h3 class="text-center module-subtitle fixed-by-width"><small translate="{{content.text}}"></small></h3>
+<h3 class="text-center module-subtitle fixed-by-width" ng-class="content.class || ''"><small translate="{{content.text}}"></small></h3>

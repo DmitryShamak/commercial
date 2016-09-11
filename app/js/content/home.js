@@ -53,17 +53,16 @@ module.exports = [{
       }
     }
   }, {
-    type: "subtitle",
-    content: {
-      text: "Our services - a guarantee of the right steps in the business"
-    }
-  }, {
     type: "info",
     class: "margin-top-md margin-bottom-sm",
     content: {
       header: {
         class: "margin-bottom-sm",
         text: "Why choose us"
+      },
+      subtitle: {
+        class: "margin-bottom-sm",
+        text: "Our services - a guarantee of the right steps in the business"
       },
       list: {
         size: 12,
