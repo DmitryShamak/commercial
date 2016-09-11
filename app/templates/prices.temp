@@ -1,0 +1,25 @@
+<div class="clearfix prices" ng-class="content.class || ''" ng-init="showContent = false">
+    <div class="margin-top-xs" ng-class="{'hidden': !showContent}">
+        <div class="margin-top-xs" ng-repeat="group in content.groups">
+            <h5 class="text-bold text-justify title text-uppercase" translate="{{group.text}}"></h5>
+
+            <div class="price-table">
+                <div class="price-row" ng-if="group.items" ng-repeat="item in group.items" ng-class="content.itemClass || ''">
+                    <div class="price-cell text" translate="{{item.text}}"></div>
+
+                    <div class="price-cell price text-center" ng-repeat="price in item.values">
+                        <p>
+                            <span class="value" ng-bind="price.value"></span>
+                            <span ng-bind="price.currency"></span>
+                        </p>
+                        <p ng-if="item.valueDescription" translate="{{item.valueDescription}}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn btn-toggle col-xs-12 text-center" ng-click="showContent = !showContent">
+        <span ng-hide="showContent" translate="show content"></span>
+        <span ng-show="showContent" translate="hide content"></span>
+    </div>
+</div>

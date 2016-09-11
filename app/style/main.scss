@@ -112,6 +112,8 @@ body {
     left: 0; right: 0;
     bottom: 60px;
 
+    padding: 0 40px;
+
     color: $textSecondaryColor;
   }
 }
@@ -137,7 +139,7 @@ main {
 
   #content {
     .module-subtitle {
-      margin: 50px auto 0;
+      margin: 20px auto 0;
     }
 
     .bg-grey {
@@ -190,6 +192,42 @@ main {
         &:hover {
           color: #000;
         }
+      }
+    }
+
+    .prices {
+      .title {
+        color: $textDarkColor;
+      }
+
+      .price-table {
+        display: table;
+        width: 100%;
+
+        .price-row {
+          display: table-row;
+
+          &:not(:last-child) .price-cell {
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+          }
+
+          .price-cell {
+            display: table-cell;
+            padding: 5px 0;
+
+            &.price {
+              width: 10%;
+            }
+
+            .value {
+              color: $textDarkColor;
+            }
+          }
+        }
+      }
+
+      .btn-toggle {
+        background-color: rgba(0, 0, 0, 0.1);
       }
     }
   }

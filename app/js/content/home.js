@@ -25,31 +25,37 @@ module.exports = [{
         titleClass: "text-huge text-bold",
         textClass: "text-big",
         size: 4,
+        hiddenText: "GLOCK",
         items: [{
-          icon: "icon-trophy",
-          title: "Experience",
-          text: "The accumulated experience allows us.."
-        }, {
           icon: "icon-briefcase",
-          title: "our customers",
-          text: "80 percent of our customers are companies from the IT sphere"
+          title: "Areas of our professional interest",
+          items: ["Information Technology",
+            "Retail and Services",
+            "Wholesale and B2B",
+            "Foreign economic activity",
+            "Investment and Production"]
         }, {
           icon: "icon-documents",
-          title: "blah blah blah",
-          text: "Aenean porta condimentum lacus, sed tempor purus euismod ut"
+          title: "Types of services",
+          items: ["Full legal support of business",
+            "Registration and reorganization of enterprises",
+            "Debt collection",
+            "Representation of clients in state bodies",
+            "Work with foreign companies and migrant workers",
+            "Investment documentation development"]
+        }, {
+          icon: "icon-trophy",
+          title: "By choosing us, you get",
+          items: ["Comprehensive legal services by a team of professionals",
+            "Flexible terms of cooperation, based on your priorities",
+            "Legal protection for your business"]
         }]
       }
     }
   }, {
-    type: "header",
-    content: {
-      class: "margin-top-md",
-      text: "blah blah blah"
-    }
-  }, {
     type: "subtitle",
     content: {
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at efficitur tellus. Mauris mi orci, pulvinar ac ipsum in, ornare vestibulum tellus. Cras erat orci, rutrum vitae nibh in, posuere eleifend ipsum. Aenean consequat justo congue nulla porta, nec sagittis bibendum."
+      text: "Our services - a guarantee of the right steps in the business"
     }
   }, {
     type: "info",
@@ -77,22 +83,6 @@ module.exports = [{
           text: "Working with bailiffs experience"
         }]
       }
-    }
-  }]
-}, {
-  id: "about",
-  title: "About",
-
-  items: [{
-    type: "header",
-    class: "margin-top-md",
-    content: {
-      text: "About"
-    }
-  }, {
-    type: "subtitle",
-    content: {
-      text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
     }
   }]
 }, {
@@ -192,6 +182,315 @@ module.exports = [{
         text: "Consultancy in the field of law"
       }, {
         text: "Preparation of official requests"
+      }]
+    }
+  }]
+}, {
+  id: "rates",
+  title: "Rates",
+
+  items: [{
+    type: "header",
+    class: "margin-top-md",
+    content: {
+      text: "Rates"
+    }
+  }, {
+    type: "subtitle",
+    content: {
+      text: "for residents of the Republic of Belarus"
+    }
+  }, {
+    type: "prices",
+    content: {
+      class: "fixed-by-width",
+      groups: [{
+        text: "Rates for legal services in the field of state registration (reorganization) of business entities (LLC (ODL), PUE, SP",
+        items: [{
+          text: "Preparation of documents for the state registration of the Company (ALC), PUE",
+          values: [{
+            value: "200",
+            currency: "BYN"
+          }, {
+            value: "100",
+            currency: "€"
+          }]
+        }, {
+          text: "Full legal support of state registration Ltd. (ODL), PUE",
+          values: [{
+            value: "300",
+            currency: "BYN"
+          }, {
+            value: "150",
+            currency: "€"
+          }]
+        }, {
+          text: "Full legal support of the state registration of IP",
+          values: [{
+            value: "80?",
+            currency: "BYN"
+          }, {
+            value: "40?",
+            currency: "€"
+          }]
+        }, {
+          text: "Full legal support of the procedure of legal entity reorganization",
+          values: [{
+            value: "200",
+            currency: "BYN"
+          }, {
+            value: "100",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for legal services in the field of representation",
+        items: [{
+          text: "Full legal support of opening the representation of non-resident organization",
+          values: [{
+            value: "700",
+            currency: "BYN"
+          }, {
+            value: "350",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for legal services when making changes to the charter of the business entity",
+        items: [{
+          text: "Preparation of documents for making changes to the constituent documents of a legal entity in connection with the change of its name",
+          values: [{
+            value: "200",
+            currency: "BYN"
+          }, {
+            value: "100",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for other legal services in the field of corporate law",
+        items: [{
+          text: "Preparation of draft documents for convening and holding the general meeting of the business association",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of draft documents for the transaction for the disposal of shares in the authorized capital of LLC (ODL)",
+          values: [{
+            value: "160",
+            currency: "BYN"
+          }, {
+            value: "80",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for the development of projects of different types of contracts",
+        items: [{
+          text: "Economic Development of the draft treaty",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }, {
+          text: "Drafting foreign economic agreement",
+          values: [{
+            value: "200",
+            currency: "BYN"
+          }, {
+            value: "100",
+            currency: "€"
+          }]
+        }, {
+          text: "Development of the labor contract projects, contracts, contract",
+          values: [{
+            value: "60",
+            currency: "BYN"
+          }, {
+            value: "30",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for legal services for legal entities in the sphere of labor migration",
+        items: [{
+          text: "Preparation, collection of documents, support for obtaining the right of residence in the Republic of Belarus",
+          values: [{
+            value: "140",
+            currency: "BYN"
+          }, {
+            value: "70",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation, collection of documents, support for obtaining a residence permit in the Republic of Belarus",
+          values: [{
+            value: "200",
+            currency: "BYN"
+          }, {
+            value: "100",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of documents for obtaining a special right to engage in work in the Republic of Belarus",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }, {
+          text: "Full legal support for obtaining a special right to engage in work in the Republic of Belarus",
+          values: [{
+            value: "180",
+            currency: "BYN"
+          }, {
+            value: "90",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for the preparation of legal documents for courts, enforcement authorities, notaries",
+        items: [{
+          text: "Study materials and giving advice on possible options for the protection of rights and legal interests of the client",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Consultation on the possibility of filing a claim to the Economic Court, the formation of a position on the case",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of claims (proposal for voluntary settlement of the dispute), the response to the claim",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparing the statement of claim, recall the statement of claim",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of the application for commencement of writ proceedings, comment on the statement of writ proceedings",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of appeal, cassation complaints, complaints of supervision, revocation on appeal, appeal, on newly discovered facts",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of the extradition documents of executive inscriptions",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparing the application for commencement of enforcement proceedings",
+          values: [{
+            value: "60",
+            currency: "BYN"
+          }, {
+            value: "30",
+            currency: "€"
+          }]
+        }, {
+          text: "Preparation of other procedural documents",
+          values: [{
+            value: "60",
+            currency: "BYN"
+          }, {
+            value: "30",
+            currency: "€"
+          }]
+        }, {
+          text: "Representation in enforcement proceedings",
+          valueDescription: "or % of foreclosure",
+          values: [{
+            value: "100",
+            currency: "BYN"
+          }, {
+            value: "50",
+            currency: "€"
+          }]
+        }]
+      }, {
+        text: "Rates for legal advice and legal assistance for any other legal matters",
+        items: [{
+          text: "Verbal legal advice",
+          values: [{
+            value: "50",
+            currency: "BYN"
+          }, {
+            value: "25",
+            currency: "€"
+          }]
+        }, {
+          text: "Written legal advice",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Representing clients before government agencies, contractors and other third parties in the course of his instructions",
+          valueDescription: "per hour",
+          values: [{
+            value: "80",
+            currency: "BYN"
+          }, {
+            value: "40",
+            currency: "€"
+          }]
+        }, {
+          text: "Selection of materials, legislation on specific customer category",
+          values: [{
+            value: "60",
+            currency: "BYN"
+          }, {
+            value: "30",
+            currency: "€"
+          }]
+        }]
       }]
     }
   }]

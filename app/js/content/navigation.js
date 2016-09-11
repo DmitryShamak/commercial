@@ -33,6 +33,10 @@ module.exports = [{
     }]
 }, {
     state: "landing",
+    id: "rates",
+    label: "Rates"
+}, {
+    state: "landing",
     id: "contact",
     label: "Contact"
 }];

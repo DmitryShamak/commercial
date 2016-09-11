@@ -36,18 +36,18 @@
 [class*="margin-"] {
   &[class*="-top"] {
     &[class*="top-sm"] {
-      margin-top: 40px;
+      margin-top: 20px;
     }
     &[class*="top-md"] {
-      margin-top: 80px;
+      margin-top: 50px;
     }
   }
   &[class*="-bottom"] {
     &[class*="bottom-sm"] {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
     &[class*="bottom-xs"] {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
@@ -104,13 +104,13 @@
 }
 
 .module-lg {
-  padding: 140px 0;
+  padding: 80px 0;
 }
 .module-md {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 .module-sm {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 .module-xs {
   padding: 20px 0;

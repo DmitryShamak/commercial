@@ -11,6 +11,7 @@ var templates = {
     subtitle: require("./templates/subtitle.temp"),
     list: require("./templates/list.temp"),
     statistic: require("./templates/statistic.temp"),
+    prices: require("./templates/prices.temp"),
     info: require("./templates/info.temp"),
     background: require("./templates/background.temp"),
     form: require("./templates/form.temp"),
@@ -77,6 +78,7 @@ var templates = {
         .directive('customList', require("./js/directive/static.js")(templates.list))
         .directive('customInfo', require("./js/directive/static.js")(templates.info))
         .directive('customStatistic', require("./js/directive/static.js")(templates.statistic))
+        .directive('customPrices', require("./js/directive/static.js")(templates.prices))
         .directive('customBackground', require("./js/directive/static.js")(templates.background))
         .directive('customForm', require("./js/directive/static.js")(templates.form))
         .directive('customInput', require("./js/directive/static.js")(templates.input))
