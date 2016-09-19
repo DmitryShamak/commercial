@@ -128,12 +128,12 @@ main {
 
   h1, h2, h3, h4, h5, h6 {
     color: $textHeaderColor;
-    letter-spacing: 4px;
   }
 
   small {
     font-family: Georgia, serif;
     font-style: italic;
+    font-size: 1em;
     font-weight: 400;
   }
 

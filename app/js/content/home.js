@@ -195,16 +195,11 @@ module.exports = [{
       text: "Rates"
     }
   }, {
-    type: "subtitle",
-    content: {
-      text: "for residents of the Republic of Belarus"
-    }
-  }, {
     type: "prices",
     content: {
       class: "fixed-by-width",
       groups: [{
-        text: "Rates for legal services in the field of state registration (reorganization) of business entities (LLC (ODL), PUE, SP",
+        text: "Rates for legal services in the field of state registration (reorganization) of business entities LLC (ODL), PUE, SP",
         items: [{
           text: "Preparation of documents for the state registration of the Company (ALC), PUE",
           values: [{
@@ -226,11 +221,10 @@ module.exports = [{
         }, {
           text: "Full legal support of the state registration of IP",
           values: [{
-            value: "80?",
+            value: "80",
             currency: "BYN"
           }, {
-            value: "40?",
-            currency: "€"
+            value: null
           }]
         }, {
           text: "Full legal support of the procedure of legal entity reorganization",
@@ -241,10 +235,7 @@ module.exports = [{
             value: "100",
             currency: "€"
           }]
-        }]
-      }, {
-        text: "Rates for legal services in the field of representation",
-        items: [{
+        }, {
           text: "Full legal support of opening the representation of non-resident organization",
           values: [{
             value: "700",
@@ -504,11 +495,6 @@ module.exports = [{
       text: "Contact"
     }
   }, {
-    type: "subtitle",
-    content: {
-      text: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-    }
-  }, {
     type: "form",
     class: "margin-top-md",
     content: {
@@ -552,7 +538,7 @@ module.exports = [{
       class: "row module-lg",
       items: [{
         label: "Email",
-        values: ["name@email.dom"],
+        values: ["aleksei@gravis.com"],
         doNotTranslate: true,
         class: "text-right"
       }, {

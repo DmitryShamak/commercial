@@ -40,7 +40,7 @@ module.exports = {
     "full_legal_support_of_business": "Полное юридическое сопровождение бизнеса",
     "registration_and_reorganization_of_enterprises": "Регистрация и реорганизация компаний",
     "debt_collection": "Взыскание долгов",
-    "representation_of_clients_in_state_bodies": "представительство интересов клиента в государственных органах",
+    "representation_of_clients_in_state_bodies": "Работа с госорганами",
     "work_with_foreign_companies_and_migrant_workers": "Работа с зарубежными компаниями и трудовыми мигрантами",
     "investment_documentation_development": "Разработка инвестиционной документации",
 
@@ -50,9 +50,9 @@ module.exports = {
     "legal_protection_for_your_business": "Надежную правовую защиту Вашего бизнеса",
 
     //RATES
-    "for_residents_of_the_republic_of_belarus": "для резидентов Республики Беларусь",
+    "byn_for_residents_of_the_republic_of_belarus_and_euro__for_non-residents_of_the_republic_of_belarus": "бел. рубли для резидентов Республики Беларусь и евро для нерезидентов Республики Беларусь",
 
-    "rates_for_legal_services_in_the_field_of_state_registration_(reorganization)_of_business_entities_(llc_(odl),_pue,_sp": "Тарифы на юридические услуги в области государственной регистрации (реорганизации) субъектов хозяйствования (ООО (ОДО), ЧУП, ИП",
+    "rates_for_legal_services_in_the_field_of_state_registration_(reorganization)_of_business_entities_llc_(odl),_pue,_sp": "Государственная регистрация (реорганизация) субъектов хозяйствования ООО (ОДО), ЧУП, ИП",
     "preparation_of_documents_for_the_state_registration_of_the_company_(alc),_pue": "Подготовка пакета документов для государственной регистрации ООО (ОДО), ЧУП",
     "full_legal_support_of_state_registration_ltd_(odl),_pue": "Полное юридическое сопровождение по государственной регистрации ООО (ОДО), ЧУП",
     "full_legal_support_of_the_state_registration_of_ip": "Полное юридическое сопровождение при государственной регистрации ИП",
@@ -61,7 +61,7 @@ module.exports = {
     "rates_for_legal_services_in_the_field_of_representation": "Тарифы на юридические услуги в области представления",
     "full_legal_support_of_opening_the_representation_of_non-resident_organization": "Полное юридическое сопровождение открытия представительства организации нерезидента Республики Беларусь в Республике Беларусь",
 
-    "rates_for_legal_services_when_making_changes_to_the_charter_of_the_business_entity": "Тарифы на юридические услуги при внесении изменений в устав коммерческой организации",
+    "rates_for_legal_services_when_making_changes_to_the_charter_of_the_business_entity": "Внесение изменений в устав коммерческой организации",
     "preparation_of_documents_for_making_changes_to_the_constituent_documents_of_a_legal_entity_in_connection_with_the_change_of_its_name": "Подготовка пакета документов для внесения изменений в учредительные документы юридического лица в связи с изменением его наименования, размера уставного фонда, состава участников, законодательства, в соответствии с которым требуется внесение изменений и (или) дополнений, другим фактическим обстоятельствам, содержащимся в уставе",
 
     "rates_for_other_legal_services_in_the_field_of_corporate_law": "Тарифы на иные юридические услуги в области корпоративного права",
@@ -77,7 +77,7 @@ module.exports = {
     "preparation,_collection_of_documents,_support_for_obtaining_the_right_of_residence_in_the_republic_of_belarus": "Подготовка, сбор документов, сопровождение получения права на проживание в Республике Беларусь",
     "preparation,_collection_of_documents,_support_for_obtaining_a_residence_permit_in_the_republic_of_belarus": "Подготовка, сбор документов, сопровождение получения вида на жительство в Республике Беларусь",
     "preparation_of_documents_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Подготовка пакета документов для получения специального права на занятие трудовой деятельностью в Республике Беларусь",
-    "full_legal_support_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Полное юридическое сопровождение получения специального права на занятие трудовой деятельностью в Республике Беларусь",
+    "full_legal_support_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Юридическое сопровождение получения специального права на занятие трудовой деятельностью в Республике Беларусь",
 
     "rates_for_the_preparation_of_legal_documents_for_courts,_enforcement_authorities,_notaries": "Тарифы по подготовке процессуальных документов для судов, органов принудительного исполнения, нотариата",
     "study_materials_and_giving_advice_on_possible_options_for_the_protection_of_rights_and_legal_interests_of_the_client": "Изучение материалов и дача консультаций о возможных вариантах защиты прав и законных интересов клиента",

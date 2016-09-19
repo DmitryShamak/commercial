@@ -23,7 +23,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
             url: "/:language/",
             template: templates.page,
             data: {
-                pageTitle: 'Home',
+                pageTitle: 'Gravis',
                 content: contents.home
             },
             controller: "PageCtrl"

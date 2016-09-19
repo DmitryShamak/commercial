@@ -17,7 +17,7 @@ module.exports = {
     "blah_blah_blah": "blah blah blah",
     "why_choose_us": "WHY CHOOSE US",
     "legal_and_advisory_services": "Legal counseling and legal support of business",
-    "our_company_specializes_in_legal_consulting_business": "Our company specializes in legal consulting business. System Legal support our",
+    "our_company_specializes_in_legal_consulting_business": "Our company specializes in legal consult business. System Legal support our",
     "the_accumulated_experience_allows_us" : "The accumulated experience allows us to professionally and effectively organize and maintain your business. support existing business, in which lawyers have a different range of services, allowing to work without fear.",
     "our_customers": "our customers",
 
@@ -29,10 +29,10 @@ module.exports = {
     "investment_and_production": "Investment and Production",
 
     "types_of_services": "Types of services",
-    "full_legal_support_of_business": "Full legal support of business",
+    "full_legal_support_of_business": "Full legal support for business",
     "registration_and_reorganization_of_enterprises": "Registration and reorganization of enterprises",
     "debt_collection": "Debt collection",
-    "representation_of_clients_in_state_bodies": "Representation of clients in state bodies",
+    "representation_of_clients_in_state_bodies": "Working with government agencies",
     "work_with_foreign_companies_and_migrant_workers": "Work with foreign companies and migrant workers",
     "investment_documentation_development": "Investment documentation development",
 
@@ -50,9 +50,9 @@ module.exports = {
     "confidentiality": "Confidentiality",
 
     //RATES
-    "for_residents_of_the_republic_of_belarus": "for residents of the Republic of Belarus",
+    "byn_for_residents_of_the_republic_of_belarus_and_euro__for_non-residents_of_the_republic_of_belarus": "BYN for residents of the Republic of Belarus and EURO  for non-residents of the Republic of Belarus",
 
-    "rates_for_legal_services_in_the_field_of_state_registration_(reorganization)_of_business_entities_(llc_(odl),_pue,_sp": "Rates for legal services in the field of state registration (reorganization) of business entities (LLC (ODL), PUE, SP",
+    "rates_for_legal_services_in_the_field_of_state_registration_(reorganization)_of_business_entities_llc_(odl),_pue,_sp": "Rates for legal services in the field of state registration (reorganization) of business entities LLC (ODL), PUE, SP",
     "preparation_of_documents_for_the_state_registration_of_the_company_(alc),_pue": "Preparation of documents for the state registration of the Company (ALC), PUE",
     "full_legal_support_of_state_registration_ltd_(odl),_pue": "Full legal support of state registration Ltd. (ODL), PUE",
     "full_legal_support_of_the_state_registration_of_ip": "Full legal support of the state registration of IP",
@@ -77,7 +77,7 @@ module.exports = {
     "preparation,_collection_of_documents,_support_for_obtaining_the_right_of_residence_in_the_republic_of_belarus": "Preparation, collection of documents, support for obtaining the right of residence in the Republic of Belarus",
     "preparation,_collection_of_documents,_support_for_obtaining_a_residence_permit_in_the_republic_of_belarus": "Preparation, collection of documents, support for obtaining a residence permit in the Republic of Belarus",
     "preparation_of_documents_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Preparation of documents for obtaining a special right to engage in work in the Republic of Belarus",
-    "full_legal_support_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Full legal support for obtaining a special right to engage in work in the Republic of Belarus",
+    "full_legal_support_for_obtaining_a_special_right_to_engage_in_work_in_the_republic_of_belarus": "Legal support for obtaining a special right to engage in work in the Republic of Belarus",
 
     "rates_for_the_preparation_of_legal_documents_for_courts,_enforcement_authorities,_notaries": "Rates for the preparation of legal documents for courts, enforcement authorities, notaries",
     "study_materials_and_giving_advice_on_possible_options_for_the_protection_of_rights_and_legal_interests_of_the_client": "Study materials and giving advice on possible options for the protection of rights and legal interests of the client",
