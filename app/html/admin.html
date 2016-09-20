@@ -1,0 +1,35 @@
+<section id="admin" class="clearfix">
+    <section class="col-sm-6 col-md-7 content-wrapper">
+        <h1 ng-show="admin.busy" class="text-center"><span class="text-small" pending></span></h1>
+        <div class="tabs-wrapper">
+            <div class="tabs-control">
+                <div ng-repeat="tab in admin.tabs" class="tab-btn text-center" title="{{tab.name}}"
+                     ng-click="admin.setTab(tab.name)" ng-class="{'active': admin.isActiveTab(tab.name)}">{{tab.name[0] | uppercase}}
+                </div>
+            </div>
+            <div class="tab translation-tab clearfix" ng-if="admin.isActiveTab('translation')">
+                <div class="form-group btn form-control add-btn" ng-click="admin.addNew();">add new</div>
+                <div class="tab-content">
+                    <div class="tab-item" ng-click="admin.editTabItem(item)" ng-repeat="item in admin.translation">{{admin.translate(item, language.active)}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="col-sm-6 col-md-5 editor-wrapper">
+        <h1 ng-show="admin.busy" class="text-center"><span class="text-small" pending></span></h1>
+        <div>
+            <div class="edit-tab translation-tab clearfix" ng-if="admin.editContent && admin.isActiveTab('translation')">
+                <h3>{{admin.translate(admin.editContent, language.active)}}</h3>
+                <form name="translationForm" ng-submit="translationForm.$valid && admin.saveChanges()" novalidate>
+                    <div class="form-group clearfix" ng-repeat="lang in languages">
+                        <label>{{lang.label}}</label>
+                        <input required class="form-control" ng-model="admin.editContent[lang.id]" type="text" placeholder="{{lang.label}}" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control text-center" type="submit" value="SAVE" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</section>

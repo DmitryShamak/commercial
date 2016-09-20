@@ -3,6 +3,7 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
 
     jQuery.ajaxSetup({cache: true});
     var templates = {
+        admin: require("../html/admin.html"),
         page: require("../templates/page.temp")
     };
 
@@ -19,6 +20,15 @@ module.exports = function($stateProvider, $urlRouterProvider, $locationProvider)
     $urlRouterProvider.otherwise('/' + language.default + '/');
 
     $stateProvider
+        .state('admin', {
+            url: "/:language/gr-admin",
+            template: templates.admin,
+            data: {
+                pageTitle: 'Gravis'
+            },
+            controller: "AdminCtrl",
+            controllerAs: "admin"
+        })
         .state('landing', {
             url: "/:language/",
             template: templates.page,

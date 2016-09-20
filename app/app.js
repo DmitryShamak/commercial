@@ -40,7 +40,7 @@ var templates = {
             $rootScope.language = new Language(currentLanguage);
 
             $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
-                $rootScope.pageTitle = toState.data.pageTitle || "Shamak";
+                $rootScope.pageTitle = toState.data.pageTitle || "Gravis";
 
                 $rootScope.language.active = toParams.language || $rootScope.language.default;
             });
@@ -59,6 +59,7 @@ var templates = {
 
         .controller('PageCtrl', require("./js/controller/pageCtrl.js"))
         .controller('LandingCtrl', require("./js/controller/landingCtrl.js"))
+        .controller('AdminCtrl', require("./js/controller/adminCtrl.js"))
 
         .directive('navigation', function() {
             return {

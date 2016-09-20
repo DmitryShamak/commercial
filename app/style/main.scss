@@ -235,6 +235,73 @@ footer {
   }
 }
 
+#admin {
+  input.ng-invalid {
+    outline: 1px solid rgba(162, 11, 15, 0.43);
+  }
+
+  .tabs-wrapper {
+    position: relative;
+
+    margin-right: $tabWidth;
+
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .tabs-control {
+      position: absolute;
+      top: 0; right: -$tabWidth;
+      width: $tabWidth;
+
+      .tab-btn {
+        margin: 0 0 2px;
+
+        line-height: $tabWidth;
+        border-radius: 0 4px 4px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        &.active {
+          line-height: $tabWidth - 2px;
+
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+        &:hover:not(.active) {
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+
+    .tab {
+      position: relative;
+      padding-top: 34px;
+
+      .tab-content {
+        max-height: 100vh;
+        overflow-y: auto;
+      }
+
+      .add-btn {
+        position: absolute;
+        top: 0; left: 0;
+      }
+
+      .tab-item {
+        padding: 5px 10px;
+        margin: 5px 0;
+        opacity: 0.8;
+        cursor: pointer;
+
+        &:hover,
+        .active {
+          background-color: rgba(0, 0, 0, 0.1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $screen-tablet) {
   #sidebar {
     nav {
