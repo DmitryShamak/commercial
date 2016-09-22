@@ -1,5 +1,22 @@
-module.exports = function() {
-    var localizations = require("../content/localizations.js");
+module.exports = ["$http", "$rootScope", function($http, $rootScope) {
+    var localizations = [],
+        langStore = {};
+
+    $http.get("/localizations").success(function(res){
+        localizations = res ? res.data : [];
+        localizations.forEach(function(translate){
+            var name = Object.keys(translate)[0];
+            var languages = Object.keys(translate[name]);
+            languages.forEach(function(lang){
+                if(!langStore[lang]) {
+                    langStore[lang] = {};
+                }
+                langStore[lang][name] = translate[name][lang];
+            });
+        });
+
+        $rootScope.$emit("TRANSLATION_READY", langStore);
+    });
 
     return {
         restrict: 'A',
@@ -13,8 +30,8 @@ module.exports = function() {
             var translation,
                 result;
 
-            if(key && localizations && localizations[language]) {
-                translation = localizations[language][key];
+            if(key && langStore && langStore[language]) {
+                translation = langStore[language][key];
             }
             result = translate ? translation || string : string;
 
@@ -29,4 +46,4 @@ module.exports = function() {
             }
         }
     }
-};
+}];

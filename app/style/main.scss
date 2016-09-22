@@ -133,7 +133,7 @@ main {
   small {
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 1em;
+    font-size: 0.8em !important;
     font-weight: 400;
   }
 
@@ -240,30 +240,29 @@ footer {
     outline: 1px solid rgba(162, 11, 15, 0.43);
   }
 
+  .form-wrapper {
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.05);
+    overflow-y: auto;
+  }
+
   .tabs-wrapper {
     position: relative;
 
+    margin-top: 10px;
     margin-right: $tabWidth;
 
-    background-color: rgba(0, 0, 0, 0.05);
-
     .tabs-control {
-      position: absolute;
-      top: 0; right: -$tabWidth;
-      width: $tabWidth;
-
       .tab-btn {
-        margin: 0 0 2px;
+        margin: 0 2px 0 0;
 
-        line-height: $tabWidth;
-        border-radius: 0 4px 4px 0;
+        padding: 5px 10px;
+        border-radius: 4px 4px 0 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: rgba(0, 0, 0, 0.2);
         cursor: pointer;
 
         &.active {
-          line-height: $tabWidth - 2px;
-
-          border: 1px solid rgba(0, 0, 0, 0.1);
           background-color: rgba(255, 255, 255, 0.1);
         }
         &:hover:not(.active) {
@@ -275,6 +274,8 @@ footer {
     .tab {
       position: relative;
       padding-top: 34px;
+      background-color: rgba(0, 0, 0, 0.05);
+      color: #000;
 
       .tab-content {
         max-height: 100vh;

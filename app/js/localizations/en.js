@@ -17,7 +17,7 @@ module.exports = {
     "blah_blah_blah": "blah blah blah",
     "why_choose_us": "WHY CHOOSE US",
     "legal_and_advisory_services": "Legal counseling and legal support of business",
-    "our_company_specializes_in_legal_consulting_business": "Our company specializes in legal consult business. System Legal support our",
+    "our_company_specializes_in_legal_consulting_business": "We provide legal support to the system of economic activity. We help create business ideas find their realization",
     "the_accumulated_experience_allows_us" : "The accumulated experience allows us to professionally and effectively organize and maintain your business. support existing business, in which lawyers have a different range of services, allowing to work without fear.",
     "our_customers": "our customers",
 

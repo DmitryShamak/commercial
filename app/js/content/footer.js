@@ -2,7 +2,7 @@ module.exports = {
     class: "margin-top-md module-lg",
     items: [{
         label: "Email",
-        value: "aleksei@gravis.by",
+        value: "ommp_lex@mail.ru",
         class: "text-right"
     }, {
         label: "Telephone",

@@ -538,7 +538,7 @@ module.exports = [{
       class: "row module-lg",
       items: [{
         label: "Email",
-        values: ["aleksei@gravis.com"],
+        values: ["ommp_lex@mail.ru"],
         doNotTranslate: true,
         class: "text-right"
       }, {

@@ -29,6 +29,8 @@ var templates = {
             var currentLanguage = $stateParams.language;
 
             $rootScope.appReady = false;
+            $rootScope.stateReady = false;
+            $rootScope.translateReady = false;
 
             $rootScope.safeApply = function(scope) {
                 if (scope.$root.$$phase != '$apply' && scope.$root.$$phase != '$digest') {
@@ -45,6 +47,12 @@ var templates = {
                 $rootScope.language.active = toParams.language || $rootScope.language.default;
             });
 
+            $rootScope.$on('TRANSLATION_READY', function(){
+                $rootScope.translateReady = true;
+                $rootScope.appReady = $rootScope.stateReady && $rootScope.translateReady;
+            });
+
+
             $rootScope.$on('$stateChangeSuccess', function (evt, toState, toParams, fromState, fromParams) {
                 if(!$rootScope.language.active) {
                     $rootScope.language.active = toParams.language || $rootScope.language.default;
@@ -53,7 +61,8 @@ var templates = {
                     })
                 }
 
-                $rootScope.appReady = true;
+                $rootScope.stateReady = true;
+                $rootScope.appReady = $rootScope.stateReady && $rootScope.translateReady;
             });
         })
 
