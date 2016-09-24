@@ -10,6 +10,8 @@ module.exports = {
     "submit": "Отправить",
     "copyright": "© 2016, ВСЕ ПРАВА ЗАЩИЩЕНЫ.",
     "message": "Сообщение",
+    "gravis": "Гравис",
+    "consulting_company": "Консалтинговая компания",
 
     "show_content": "показать содержимое",
     "hide_content": "скрыть содержимое",

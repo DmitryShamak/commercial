@@ -1,5 +1,5 @@
 <ul class="clearfix statistic">
-    <div class="hidden-text hidden" translate="content.hiddenText"></div>
+    <div id="glock" class="hidden-text hidden">{{content.hiddenText}}</div>
     <li ng-repeat="item in content.items" ng-class="content.itemClass || ''" class="text-center col-sm-{{content.size}} col-md-{{content.size}} col-lg-{{section.list.size}}">
         <div ng-if="item.icon" class="list-icon" ng-class="content.iconClass || ''">
             <i ng-class="item.icon"></i>
@@ -7,8 +7,8 @@
 
         <h4 ng-if="item.title" class="text-uppercase" ng-class="content.titleClass || ''" translate="{{item.title}}"></h4>
         <p ng-if="item.text" ng-class="content.textClass || ''" translate="{{item.text}}"></p>
-        <div ng-if="item.items" ng-repeat="text in item.items">
-            <p ng-class="content.textClass || ''" translate="{{text}}"></p>
-        </div>
+        <ul ng-if="item.items" ng-class="content.listClass || ''">
+            <li ng-repeat="text in item.items" ng-class="content.textClass || ''" translate="{{text}}"></li>
+        </ul>
     </li>
 </ul>

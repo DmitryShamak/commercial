@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.get('/localizations', function(req, res){
+app.get('/localization', function(req, res){
     var emptyFileData = {"data": []};
     jsonfile.readFile(localizationFilePath, function(err, data){
         if(!err) {
@@ -31,7 +31,7 @@ app.get('/localizations', function(req, res){
         });
     });
 });
-app.post('/localizations', function(req, res) {
+app.post('/localization', function(req, res) {
     var data = {
       "data": req.body || []
     };

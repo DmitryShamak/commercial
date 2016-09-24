@@ -24,6 +24,7 @@ module.exports = [{
         iconClass: "text-giant margin-bottom-xs",
         titleClass: "text-huge text-bold",
         textClass: "text-big",
+        listClass: "margin-left-xs text-left",
         size: 4,
         hiddenText: "GLOCK",
         items: [{
@@ -66,7 +67,7 @@ module.exports = [{
       },
       list: {
         size: 12,
-        class: "fixed-by-width text-capitalize",
+        class: "fixed-by-width",
         itemClass: "text-big",
         items: [{
           text: "Confidentiality"

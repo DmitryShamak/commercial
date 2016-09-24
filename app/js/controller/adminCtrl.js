@@ -33,7 +33,7 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
 
             return langItem;
         });
-        $http.post('/localizations', data).success(function(res){
+        $http.post('/localization', data).success(function(res){
             console.log(res);
         });
     };
@@ -57,7 +57,7 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
         return admin.activeTab === tab;
     };
 
-    $http.get("/localizations").success(function(res){
+    $http.get("/localization").success(function(res){
         admin.translation = res.data.map(function(item){
             var key = Object.keys(item)[0];
             return item[key];

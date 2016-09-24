@@ -20,6 +20,15 @@ body {
   @import "base.scss";
 }
 
+#glock {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  font-size: 150px;
+  text-align: center;
+  opacity: 0.2;
+}
+
 #sidebar {
   position: fixed;
   top: 0; bottom: 0;
@@ -67,6 +76,7 @@ body {
       left: 230px;  top: -5px;
 
       background: rgba(1,1,1,0.8);
+      font-size: 0.8em;
       cursor: pointer;
 
       &:hover {

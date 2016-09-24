@@ -1,22 +1,23 @@
 module.exports = ["$http", "$rootScope", function($http, $rootScope) {
     var localizations = [],
-        langStore = {};
-
-    $http.get("/localizations").success(function(res){
-        localizations = res ? res.data : [];
-        localizations.forEach(function(translate){
-            var name = Object.keys(translate)[0];
-            var languages = Object.keys(translate[name]);
-            languages.forEach(function(lang){
-                if(!langStore[lang]) {
-                    langStore[lang] = {};
-                }
-                langStore[lang][name] = translate[name][lang];
-            });
-        });
-
+        langStore = require("../content/localizations.js");//{};
         $rootScope.$emit("TRANSLATION_READY", langStore);
-    });
+
+    // $http.get("/localization").success(function(res){
+    //     localizations = res ? res.data : [];
+    //     localizations.forEach(function(translate){
+    //         var name = Object.keys(translate)[0];
+    //         var languages = Object.keys(translate[name]);
+    //         languages.forEach(function(lang){
+    //             if(!langStore[lang]) {
+    //                 langStore[lang] = {};
+    //             }
+    //             langStore[lang][name] = translate[name][lang];
+    //         });
+    //     });
+    //
+    //     $rootScope.$emit("TRANSLATION_READY", langStore);
+    // });
 
     return {
         restrict: 'A',

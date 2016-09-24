@@ -16,6 +16,12 @@
     text-transform: capitalize;
   }
 
+  &[class*="-tiny"] {
+    font-size: 0.5em;
+  }
+  &[class*="-extra-tiny"] {
+    font-size: 0.3em;
+  }
   &[class*="-small"] {
     font-size: 0.8em;
   }
@@ -48,6 +54,14 @@
     }
     &[class*="bottom-xs"] {
       margin-bottom: 10px;
+    }
+  }
+  &[class*="-left"] {
+    &[class*="left-sm"] {
+      margin-left: 20px;
+    }
+    &[class*="left-xs"] {
+      margin-left: 10px;
     }
   }
 }
