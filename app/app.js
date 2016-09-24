@@ -86,6 +86,7 @@ var templates = {
         .directive('customHeader', require("./js/directive/static.js")(templates.header))
         .directive('customSubtitle', require("./js/directive/static.js")(templates.subtitle))
         .directive('customList', require("./js/directive/static.js")(templates.list))
+        .directive('customSlider', require("./js/directive/slider.js")(templates.slider))
         .directive('customInfo', require("./js/directive/static.js")(templates.info))
         .directive('customStatistic', require("./js/directive/static.js")(templates.statistic))
         .directive('customPrices', require("./js/directive/static.js")(templates.prices))

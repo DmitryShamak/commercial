@@ -1,5 +1,5 @@
 module.exports = {
-    "about": "О нас",
+    "about_us": "О нас",
     "contact": "Контакты",
     "home": "Главная",
     "rates": "Тарифы",

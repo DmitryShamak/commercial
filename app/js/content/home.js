@@ -53,6 +53,46 @@ module.exports = [{
         }]
       }
     }
+  }]
+}, {
+  id: "about",
+  title: "Services",
+  items: [{
+    type: "header",
+    class: "margin-top-md fixed-by-width",
+    content: {
+      text: "About us"
+    }
+  }, {
+    type: "list",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      //title: "Registration and reorganization of legal entities",
+      itemClass: "text-big",
+      items: [{
+        text: "Стаж работы в области права более 10 лет"
+      }, {
+        text: "Наши сотрудники прошли юридическую аттестацию в Министерстве Юстиций Республики Беларусь"
+      }, {
+        text: "Более 200 выигранных дел в экономических судах и судах общей юриздикции"
+      }]
+    }
+  }, {
+    type: "slider",
+    class: "margin-top-sm fixed-by-width",
+    content: {
+      title: "Наши партнеры",
+      items: [{
+        icon: "",
+        text: "БелСвизБанк"
+      }, {
+        icon: "",
+        text: "АльфаБанк"
+      }, {
+        icon: "",
+        text: "БанкРешение"
+      }]
+    }
   }, {
     type: "info",
     class: "margin-top-md margin-bottom-sm",

@@ -5,7 +5,7 @@ module.exports = [{
 }, {
     state: "landing",
     id: "about",
-    label: "About"
+    label: "About us"
 }, {
     state: "landing",
     id: "services",

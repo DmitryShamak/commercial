@@ -1,5 +1,5 @@
 module.exports = {
-    "about": "About",
+    "about_us": "About us",
     "contact": "Contacts",
     "home": "Home",
     "rates": "Rates",
