@@ -9,6 +9,7 @@
 
                     <div class="price-cell price text-center" ng-repeat="price in item.values">
                         <p ng-if="price.value">
+                            <span class="text-small" translate="from"></span>
                             <span class="value" ng-bind="price.value"></span>
                             <span ng-bind="price.currency"></span>
                         </p>

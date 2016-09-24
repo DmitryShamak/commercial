@@ -12,6 +12,7 @@ module.exports = {
     "message": "Сообщение",
     "gravis": "Гравис",
     "consulting_company": "Консалтинговая компания",
+    "from": "от",
 
     "show_content": "показать содержимое",
     "hide_content": "скрыть содержимое",
@@ -50,6 +51,16 @@ module.exports = {
     "comprehensive_legal_services_by_a_team_of_professionals": "Комплексные юридические услуги от команды профессионалов",
     "flexible_terms_of_cooperation,_based_on_your_priorities": "Гибкие условия сотрудничества, исходя из Ваших приоритетов",
     "legal_protection_for_your_business": "Надежную правовую защиту Вашего бизнеса",
+
+    //ABOUT US
+    "work_experience_in_the_field_of_law_for_over_10_years": "Стаж работы в области права более 10 лет",
+    "our_employees_have_been_legally_certified_by_the_ministry_of_justice_of_the_republic_of_belarus": "Наши сотрудники прошли юридическую аттестацию в Министерстве Юстиций Республики Беларусь",
+    "more_than_200_cases_won_in_economic_courts_and_courts_of_general_jurisdiction": "Более 200 выигранных дел в экономических судах и судах общей юрисдикции",
+    "our_partners": "Наши партнеры",
+    "belswissbank": "БелСвиссБанк",
+    "alfa_bank": "Альфа Банк",
+    "bank_decision": "Банк Решение",
+    //ABOUT US END
 
     //RATES
     "byn_for_residents_of_the_republic_of_belarus_and_euro__for_non-residents_of_the_republic_of_belarus": "бел. рубли для резидентов Республики Беларусь и евро для нерезидентов Республики Беларусь",

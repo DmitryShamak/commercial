@@ -12,6 +12,7 @@ module.exports = {
     "message": "Message",
     "gravis": "Gravis",
     "consulting_company": "Consulting company",
+    "from": "from",
 
     "show_content": "show content",
     "hide_content": "hide content",
@@ -50,6 +51,16 @@ module.exports = {
     "working_with_bailiffs_experience": "Working with bailiffs experience",
     "communication_with_contractors_and_correspondence_in_english": "Communication with contractors and correspondence in English",
     "confidentiality": "Confidentiality",
+
+    //ABOUT US
+    "work_experience_in_the_field_of_law_for_over_10_years": "Work experience in the field of law for over 10 years",
+    "our_employees_have_been_legally_certified_by_the_ministry_of_justice_of_the_republic_of_belarus": "Our employees have been legally certified by the Ministry of Justice of the Republic of Belarus",
+    "more_than_200_cases_won_in_economic_courts_and_courts_of_general_jurisdiction": "More than 200 cases won in economic courts and courts of general jurisdiction",
+    "our_partners": "Our partners",
+    "belswissbank": "BelSwissBank",
+    "alfa_bank": "Alfa Bank",
+    "bank_decision": "Bank Decision",
+    //ABOUT US END
 
     //RATES
     "byn_for_residents_of_the_republic_of_belarus_and_euro__for_non-residents_of_the_republic_of_belarus": "BYN for residents of the Republic of Belarus and EURO  for non-residents of the Republic of Belarus",

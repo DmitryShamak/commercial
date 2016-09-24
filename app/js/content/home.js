@@ -70,27 +70,27 @@ module.exports = [{
       //title: "Registration and reorganization of legal entities",
       itemClass: "text-big",
       items: [{
-        text: "Стаж работы в области права более 10 лет"
+        text: "Work experience in the field of law for over 10 years"
       }, {
-        text: "Наши сотрудники прошли юридическую аттестацию в Министерстве Юстиций Республики Беларусь"
+        text: "Our employees have been legally certified by the Ministry of Justice of the Republic of Belarus"
       }, {
-        text: "Более 200 выигранных дел в экономических судах и судах общей юриздикции"
+        text: "More than 200 cases won in economic courts and courts of general jurisdiction"
       }]
     }
   }, {
     type: "slider",
     class: "margin-top-sm fixed-by-width",
     content: {
-      title: "Наши партнеры",
+      title: "Our partners",
       items: [{
         icon: "",
-        text: "БелСвизБанк"
+        text: "BelSwissBank"
       }, {
         icon: "",
-        text: "АльфаБанк"
+        text: "Alfa Bank"
       }, {
         icon: "",
-        text: "БанкРешение"
+        text: "Bank Decision"
       }]
     }
   }, {
