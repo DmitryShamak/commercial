@@ -10,6 +10,7 @@ var templates = {
     header: require("./templates/header.temp"),
     subtitle: require("./templates/subtitle.temp"),
     list: require("./templates/list.temp"),
+    slider: require("./templates/slider.temp"),
     statistic: require("./templates/statistic.temp"),
     prices: require("./templates/prices.temp"),
     info: require("./templates/info.temp"),

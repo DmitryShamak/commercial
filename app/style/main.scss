@@ -237,6 +237,30 @@ main {
       }
     }
   }
+
+  .gr-slider {
+    ul {
+      list-style: none;
+      padding: 0 $sliderControlBtnWidth;
+      margin: 0;
+
+      li {
+        position: relative;
+        display: inline-block;
+        height: $sliderItemHeight;
+        width: $sliderItemWidth;
+        padding: 10px 10px;
+
+        .gr-icon {
+          max-width: 100%;
+          height: $sliderItemImageHeight;
+
+          -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+          filter: grayscale(100%);
+        }
+      }
+    }
+  }
 }
 
 footer {

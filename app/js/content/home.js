@@ -79,17 +79,17 @@ module.exports = [{
     }
   }, {
     type: "slider",
-    class: "margin-top-sm fixed-by-width",
+    class: "margin-top-md fixed-by-width",
     content: {
       title: "Our partners",
       items: [{
-        icon: "",
+        image: "http://www.21.by/pub/news/2013/10/1380945603208094.png",
         text: "BelSwissBank"
       }, {
-        icon: "",
+        image: "https://www.alfabank.by/upload/medialibrary/433/433b44dbfccde5d4a908809925be5c40.PNG",
         text: "Alfa Bank"
       }, {
-        icon: "",
+        image: "http://online-bank.by/banks/reshenie/images/bank-reshenie-online.png",
         text: "Bank Decision"
       }]
     }
