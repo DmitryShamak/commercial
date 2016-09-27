@@ -4,14 +4,14 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
     admin.tabs = [{
         name: "translation"
     }, {
-        name: "rates"
+        name: "page"
     }];
 
     admin.translation = [];
     admin.rates = [];
     admin.editContent = null;
 
-    admin.activeTab = admin.tabs[0].name;
+    admin.activeTab = null;
 
     admin.translate = function(obj, lang){
         if(obj[lang]) {
@@ -33,7 +33,10 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
 
             return langItem;
         });
-        $http.post('/localization', data).success(function(res){
+        $http.post('/json', {
+            data: data,
+            fileName: "localization"
+        }).success(function(res){
             console.log(res);
         });
     };
@@ -46,9 +49,67 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
         admin.editTabItem(admin.translation.slice(-1)[0]);
     };
 
+    admin.normalize = function(path, parent, source, index){
+        var lastDepth = true;
+        parent = parent || {items: []};
+        var item = parent.items[index];
+        if(!item) {
+            index = parent.items.push({
+                path: path,
+                title: "",
+                items: []
+            }) - 1;
+            item = parent.items[index];
+        }
+
+        if(source.title) {
+            item.title = source.title
+        }
+        if(source.text) {
+            item.items.push(source.text);
+        }
+
+        for(var key in source) {
+            if(typeof source[key] === "object") {
+                path.push(key);
+                index = parent.items.push(item) - 1;
+                lastDepth = false;
+                return admin.normalize(path, parent, source[key], index || 0);
+            }
+        }
+
+        if(lastDepth) {
+            return parent;
+        }
+    };
+
     admin.setTab = function(tab){
         if(admin.isActiveTab(tab)) {
            return;
+        }
+
+        switch(tab) {
+            case "translation":
+                admin.busy = true;
+                $http.get("/app/json/localization.json").success(function(res){
+                    admin.translation = res.data.map(function(item){
+                        var key = Object.keys(item)[0];
+                        return item[key];
+                    });
+                    admin.busy = false;
+                });
+                break;
+            case "page":
+                admin.busy = true;
+                $http.get("/app/json/home.json").success(function(res){
+                    admin.page = res.data.map(function(item){
+                        var data = admin.normalize([], null, item);
+
+                        return data;
+                    });
+                    admin.busy = false;
+                });
+                break;
         }
 
         admin.activeTab = tab;
@@ -57,11 +118,5 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
         return admin.activeTab === tab;
     };
 
-    $http.get("/localization").success(function(res){
-        admin.translation = res.data.map(function(item){
-            var key = Object.keys(item)[0];
-            return item[key];
-        });
-        admin.busy = false;
-    });
+    admin.setTab("translation");
 }];

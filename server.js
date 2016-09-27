@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var deploy = false;
 var port = process.env.PORT || deploy ? 80 : 3002;
-var localizationFilePath = './app/js/localizations/all.json';
+var localizationFilePath = './app/json/localization.json';
 
 app.use('/', express.static(__dirname));
 app.use('/bower_components', express.static(__dirname + "/bower_components"));
@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.get('/localization', function(req, res){
+app.get('/json/:file', function(req, res){
     var emptyFileData = {"data": []};
     jsonfile.readFile(localizationFilePath, function(err, data){
         if(!err) {
@@ -31,11 +31,12 @@ app.get('/localization', function(req, res){
         });
     });
 });
-app.post('/localization', function(req, res) {
+app.post('/json', function(req, res) {
     var data = {
-      "data": req.body || []
+      "data": req.body.data || []
     };
-    jsonfile.writeFile(localizationFilePath, data, function(err){
+    var jsonPath = "./app/json/" + req.body.fileName;
+    jsonfile.writeFile(jsonPath, data, function(err){
         if (err) return res.send(err);
 
         res.send("SUCCESS");

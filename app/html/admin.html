@@ -29,6 +29,11 @@
                     <div class="tab-item" ng-click="admin.editTabItem(item)" ng-repeat="item in admin.translation">{{admin.translate(item, language.active)}}</div>
                 </div>
             </div>
+            <div class="tab page-tab clearfix" ng-if="admin.isActiveTab('page')">
+                <div class="tab-content">
+                    <div class="tab-item" ng-click="admin.editTabItem(item)" ng-repeat="item in admin.page">{{admin.translate(item, language.active)}}</div>
+                </div>
+            </div>
         </div>
     </section>
 </section>
