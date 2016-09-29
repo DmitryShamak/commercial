@@ -19,21 +19,17 @@
         <h1 ng-show="admin.busy" class="text-center"><span class="text-small" pending></span></h1>
         <div class="tabs-wrapper">
             <div class="tabs-control clearfix">
-                <div ng-repeat="tab in admin.tabs" class="pull-left tab-btn text-center" title="{{tab.name}}"
+                <a href="#{{tab.name}}" ng-repeat="tab in admin.tabs" class="pull-left tab-btn text-center" title="{{tab.name}}"
                      ng-click="admin.setTab(tab.name)" ng-class="{'active': admin.isActiveTab(tab.name)}">{{tab.name}}
-                </div>
+                </a>
             </div>
-            <div class="tab translation-tab clearfix" ng-if="admin.isActiveTab('translation')">
+            <div class="tab fixed-tab translation-tab clearfix" ng-if="admin.isActiveTab('translation')">
                 <div class="form-group btn form-control add-btn" ng-click="admin.addNew();">add new</div>
                 <div class="tab-content">
                     <div class="tab-item" ng-click="admin.editTabItem(item)" ng-repeat="item in admin.translation">{{admin.translate(item, language.active)}}</div>
                 </div>
             </div>
-            <div class="tab page-tab clearfix" ng-if="admin.isActiveTab('page')">
-                <div class="tab-content">
-                    <div class="tab-item" ng-click="admin.editTabItem(item)" ng-repeat="item in admin.page">{{admin.translate(item, language.active)}}</div>
-                </div>
-            </div>
+            <div class="tab page-tab clearfix" ng-if="admin.isActiveTab('page')" admin-page-editor=""></div>
         </div>
     </section>
 </section>

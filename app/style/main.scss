@@ -270,8 +270,10 @@ footer {
 }
 
 #admin {
-  input.ng-invalid {
-    outline: 1px solid rgba(162, 11, 15, 0.43);
+  input.ng-invalid,
+  select.ng-invalid {
+    border: 1px solid rgba(162, 11, 15, 0.43);
+    background-color: rgba(162, 11, 15, 0.1);
   }
 
   .form-wrapper {
@@ -280,11 +282,25 @@ footer {
     overflow-y: auto;
   }
 
+  .gr-form {
+    padding: 10px;
+
+    .gr-section {
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.4);
+
+      .gr-section-item {
+        margin: 5px;
+        padding: 10px;
+        background-color: rgba(171, 196, 214, 0.22);
+      }
+    }
+  }
+
   .tabs-wrapper {
     position: relative;
 
     margin-top: 10px;
-    margin-right: $tabWidth;
 
     .tabs-control {
       .tab-btn {
@@ -307,9 +323,12 @@ footer {
 
     .tab {
       position: relative;
-      padding-top: 34px;
       background-color: rgba(0, 0, 0, 0.05);
       color: #000;
+
+      &.fixed-tab {
+        padding-top: 34px;
+      }
 
       .tab-content {
         max-height: 100vh;

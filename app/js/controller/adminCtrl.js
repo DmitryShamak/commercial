@@ -1,4 +1,4 @@
-module.exports = ["$scope", "$http", function ($scope, $http) {
+module.exports = ["$scope", "$http", "$location", function ($scope, $http, $location) {
     var admin = this;
     admin.busy = true;
     admin.tabs = [{
@@ -118,5 +118,5 @@ module.exports = ["$scope", "$http", function ($scope, $http) {
         return admin.activeTab === tab;
     };
 
-    admin.setTab("translation");
+    admin.setTab($location.hash() || "translation");
 }];

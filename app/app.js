@@ -71,6 +71,10 @@ var templates = {
         .controller('LandingCtrl', require("./js/controller/landingCtrl.js"))
         .controller('AdminCtrl', require("./js/controller/adminCtrl.js"))
 
+        //filters
+        .filter("id", require("./js/filter/id.js"))
+        //filters end
+
         .directive('navigation', function() {
             return {
                 restrict: 'A',
@@ -101,6 +105,10 @@ var templates = {
 
         .factory('api', function() {
             return require("./js/helpers/api.js");
-        })
+        });
+
+    //COMPONENTS
+    require("./components/adminPageEditor/adminPageEditor.js");
+    //COMPONENTS END
 })();
 

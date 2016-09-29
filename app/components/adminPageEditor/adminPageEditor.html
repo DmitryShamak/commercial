@@ -1,0 +1,56 @@
+<div class="tab-content">
+    <form class="gr-form" name="adminPageEditor" novalidate ng-submit="adminPageEditor.$valid && editor.handleSubmit()">
+        <div class="form-group gr-section" ng-repeat="section in editor.data">
+            <!-- section details -->
+            <div class="form-group">
+                <label>Title</label>
+                <input required type="text" class="gr-input form-control" ng-model="section.title" ng-change="section.id = editor.toId(section.title)" />
+            </div>
+
+            <div class="form-group gr-section-item" ng-repeat="item in section.items">
+                <!-- section item data -->
+                <div class="form-group">
+                    <label>Type</label>
+                    <select required class="gr-select form-control" ng-model="item.type">
+                        <option ng-repeat="option in editor.itemTypes" value="{{option.value}}">{{option.label}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Class</label>
+                    <input type="text" class="gr-input form-control" ng-model="item.class" />
+                </div>
+
+                <div class="form-group">
+                    <label>Content Type</label>
+                    <select required class="gr-select form-control" ng-model="item.content.type">
+                        <option ng-repeat="option in editor.contentTypes" value="{{option.value}}">{{option.label}}</option>
+                    </select>
+                </div>
+
+                <div ng-if="item.content.type">
+                    <div class="form-group" ng-repeat="text in item.content.items">
+                        <label>Text</label>
+                        <input required type="text" class="gr-input form-control" ng-model="text.value" />
+                    </div>
+                    <div class="clearfix">
+                        <div class="btn form-control" ng-disabled="editor.busy" ng-click="!editor.busy && editor.appendPageSectionItemText(item.content)">Add Text</div>
+                    </div>
+                </div>
+                <!-- section item data end -->
+            </div>
+            <div class="clearfix">
+                <div class="btn form-control" ng-disabled="editor.busy" ng-click="!editor.busy && editor.appendPageSectionItem(section)">Add Section Item</div>
+            </div>
+            <!-- section details end -->
+        </div>
+        <div class="form-group">
+            <div class="btn form-control" ng-disabled="editor.busy" ng-click="!editor.busy && editor.appendPageSection()">Add Section</div>
+        </div>
+        <div class="form-group">
+            <button class="btn form-control" ng-disabled="!adminPageEditor.$valid || editor.busy">
+                <span>{{editor.busy ? 'Please, wait' : 'Save All'}}</span>
+            </button>
+        </div>
+    </form>
+</div>
