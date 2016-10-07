@@ -39,6 +39,9 @@
                 }, {
                     label: "List",
                     value: "list"
+                }, {
+                    label: "Table",
+                    value: "table"
                 }];
 
                 this.toId = function toId(input){
